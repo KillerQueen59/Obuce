@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ps"
+        android:gravity="center"
+        android:text="WELCOME TO"
+        android:textColor="@color/main"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/rectangle_"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ps"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_round_white"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/ps"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ps"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_round_white"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/ps"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/txt_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ps"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_white_2"
+            android:textColor="@color/main"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="21dp"
+            android:fontFamily="@font/ps_bold"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,8 @@
-package com.ojanbelajar.obuce
+package com.ojanbelajar.obuce.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ojanbelajar.obuce.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

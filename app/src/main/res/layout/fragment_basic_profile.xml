@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/ps"
+        android:gravity="center"
+        android:text="Let’s get started!"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:paddingTop="20dp"
+        android:paddingHorizontal="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ps"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_round_white_stroke_main"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/ps"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ps"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_round_white_stroke_main"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/ps"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ps"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_round_white_stroke_main"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/ps"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
