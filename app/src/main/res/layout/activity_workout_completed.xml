@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:orientation="vertical"
+    tools:context=".ui.tab.home.WorkoutCompletedActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ps_bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="WORKOUT COMPLETED"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ilustrasio13"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ps_bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="500 Kcal"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ps"
+        android:gravity="center_horizontal"
+        android:text="Calories Burned"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="32dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/teal_200">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ps_bold"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Finish"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

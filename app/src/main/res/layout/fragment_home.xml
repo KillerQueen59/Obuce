@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:orientation="vertical"
+    tools:context=".ui.tab.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/monster_face"></de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ps"
+                android:text="Monday,19 Agustus"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:textSize="12sp"
+                android:fontFamily="@font/ps"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Irsyad :)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ps_bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:layout_marginRight="5dp"
+            android:padding="20dp"
+            app:cardCornerRadius="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/payment_labell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps"
+                    android:includeFontPadding="false"
+                    android:text="8000 Kcal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/payment_descc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_labell"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps_bold"
+                    android:includeFontPadding="false"
+                    android:text="8000 Kcal"
+                    android:textColor="@color/teal_200"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:padding="20dp"
+            app:cardCornerRadius="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/payment_labell2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps"
+                    android:includeFontPadding="false"
+                    android:text="8000 Kcal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/payment_descc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_labell2"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps_bold"
+                    android:includeFontPadding="false"
+                    android:text="8000 Kcal"
+                    android:textColor="@color/teal_200"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:id="@+id/cv_choosefood"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/list1"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ilustrasio001" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/list1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/payment_descclis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_labelllis1"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/ps_bold"
+                    android:includeFontPadding="false"
+                    android:text="Choose Foods"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payment_labelllis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps"
+                    android:includeFontPadding="false"
+                    android:text="Choose foods from our recommendation or scan your own food to know how much calories."
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:id="@+id/cv_chooseworkout"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/list2"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ilustrasio002" />
+
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/list2">
+
+                <TextView
+                    android:id="@+id/payment_descclis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_labelllis1"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/ps_bold"
+                    android:includeFontPadding="false"
+                    android:text="Choose Workout"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payment_labelllis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps"
+                    android:includeFontPadding="false"
+                    android:text="Choose workout or exercise plan with lots of focus choices."
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/list3"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ilustrasio003" />
+
+            <ImageView
+                android:id="@+id/list3_1"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="350dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/list3"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/payment_descclis3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_labelllis1"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/ps_bold"
+                    android:includeFontPadding="false"
+                    android:text="Still Confused with the nutritions terms?"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payment_labelllis3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ps"
+                    android:includeFontPadding="false"
+                    android:text="8000 Kcal"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
