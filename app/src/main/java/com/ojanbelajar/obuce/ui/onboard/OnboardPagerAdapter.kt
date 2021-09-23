@@ -1,16 +1,10 @@
 package com.ojanbelajar.obuce.ui.onboard
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
-import android.R
-import android.util.Log
-
-import android.widget.TextView
-
-import android.view.LayoutInflater
-import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.ojanbelajar.obuce.databinding.OnboardItemBinding
 

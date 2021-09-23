@@ -1,14 +1,12 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
-import android.opengl.GLSurfaceView
-import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.ojanbelajar.obuce.R
-import com.ojanbelajar.obuce.databinding.FragmentBasicProfileBinding
 import com.ojanbelajar.obuce.databinding.FragmentGenderBinding
 
 class GenderFragment: Fragment() {
@@ -37,7 +35,7 @@ class GenderFragment: Fragment() {
         }
     }
 
-    fun setSrc(isMale: Boolean){
+    private fun setSrc(isMale: Boolean){
         if (isMale){
             Glide.with(this).load(R.drawable.male_selected).into(binding.imgMale)
             Glide.with(this).load(R.drawable.female).into(binding.imgFemale)

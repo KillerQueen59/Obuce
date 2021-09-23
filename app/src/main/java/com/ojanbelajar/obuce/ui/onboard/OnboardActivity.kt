@@ -1,7 +1,6 @@
 package com.ojanbelajar.obuce.ui.onboard
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
@@ -9,7 +8,6 @@ import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.databinding.ActivityOnboardBinding
 import com.ojanbelajar.obuce.ui.login.LoginActivity
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.toast
 
 class OnboardActivity: AppCompatActivity() {
 
@@ -29,8 +27,10 @@ class OnboardActivity: AppCompatActivity() {
         onboardItem.add(Onboard("Diet Recommendation","We provide you the best diet you can get", R.drawable.onboard1))
         onboardItem.add(Onboard("Burn your calories","Balance your intake by doing exercises", R.drawable.onboard2))
         onboardItem.add(Onboard("Get updates for \n" + "healthy lifestyle","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem nisi, consectetur sed nam. Commodo euismod sagittis nisi in sed. Tempus, at viverra orci dolor, dolor ac quis arcu. Id fringilla arcu morbi neque.", R.drawable.onboard3))
+
         binding.pagerOnboard.adapter = OnboardPagerAdapter(this,onboardItem)
         binding.tabLayout.setupWithViewPager(binding.pagerOnboard)
+
         binding.btnRight.setOnClickListener {
             position = binding.pagerOnboard.currentItem;
             if (position < onboardItem.size) {
@@ -38,6 +38,7 @@ class OnboardActivity: AppCompatActivity() {
                 binding.pagerOnboard.currentItem = position
             }
         }
+
         binding.btnLeft.setOnClickListener {
             position = binding.pagerOnboard.currentItem;
             if (position > 0) {

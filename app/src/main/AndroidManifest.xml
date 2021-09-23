@@ -10,22 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Obuce">
         <activity
-            android:name=".ui.MainActivity"
-            >
-        </activity>
-        <activity android:name=".ui.SplashScreen"
+            android:name=".ui.tab.home.WorkoutCompletedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.tab.home.WorkoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.tab.home.ListWorkoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.tab.home.WorkoutMethodeActivity"
+            android:exported="true" />
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".ui.SplashScreen"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".ui.onboard.OnboardActivity"/>
-        <activity android:name=".ui.getstarted.GetStartedActivity"
-            android:theme="@style/Theme.Obuce.Top.White"/>
-        <activity android:name=".ui.login.LoginActivity"
-            android:theme="@style/Theme.Obuce.Top.White"/>
+        <activity android:name=".ui.onboard.OnboardActivity" />
+        <activity
+            android:name=".ui.getstarted.GetStartedActivity"
+            android:theme="@style/Theme.Obuce.Top.White" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/Theme.Obuce.Top.White" />
     </application>
 
 </manifest>

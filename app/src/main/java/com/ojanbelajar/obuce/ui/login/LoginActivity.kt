@@ -3,6 +3,7 @@ package com.ojanbelajar.obuce.ui.login
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityLoginBinding
+import com.ojanbelajar.obuce.ui.MainActivity
 import com.ojanbelajar.obuce.ui.getstarted.GetStartedActivity
 import org.jetbrains.anko.startActivity
 
@@ -16,6 +17,9 @@ class LoginActivity: AppCompatActivity() {
         setContentView(binding.root)
         binding.txtSignUp.setOnClickListener {
             startActivity<GetStartedActivity>()
+        }
+        binding.btnSign.setOnClickListener{
+            startActivity<MainActivity>()
         }
     }
 }
