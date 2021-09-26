@@ -1,8 +1,7 @@
-package com.ojanbelajar.obuce.ui.tab.home
+package com.ojanbelajar.obuce.ui.tab.home.workout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ojanbelajar.obuce.databinding.ActivityListWorkoutBinding
 import com.ojanbelajar.obuce.databinding.ActivityWorkoutBinding
 import org.jetbrains.anko.startActivity
 

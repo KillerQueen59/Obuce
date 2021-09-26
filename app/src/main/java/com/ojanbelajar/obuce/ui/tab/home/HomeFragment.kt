@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ojanbelajar.obuce.databinding.FragmentHomeBinding
+import com.ojanbelajar.obuce.ui.tab.home.food.FoodRecommendationActivity
+import com.ojanbelajar.obuce.ui.tab.home.workout.WorkoutMethodeActivity
 import org.jetbrains.anko.support.v4.startActivity
 
 
@@ -41,6 +43,10 @@ class HomeFragment : Fragment() {
 
 //        val index = arguments?.getInt(ARG_SECTION_NUMBER, 0)
 //        binding.tvhome.text = "home"
+        binding.cvChoosefood.setOnClickListener {
+            startActivity<FoodRecommendationActivity>()
+        }
+
         binding.cvChooseworkout.setOnClickListener {
             startActivity<WorkoutMethodeActivity>()
         }

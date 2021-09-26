@@ -1,4 +1,4 @@
-package com.ojanbelajar.obuce.ui.tab.home
+package com.ojanbelajar.obuce.ui.tab.home.workout
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

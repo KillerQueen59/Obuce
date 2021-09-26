@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.tab.home.WorkoutActivity"
+    tools:context=".ui.tab.home.workout.WorkoutActivity"
     android:orientation="vertical">
 
     <ImageView
@@ -62,7 +62,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:src="@drawable/back"
                     android:background="@color/white"/>
 
                 <ImageView

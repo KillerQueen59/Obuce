@@ -18,7 +18,6 @@ class GetStartedActivity: AppCompatActivity() {
         binding = ActivityGetStartedBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.pagerGetstarted.adapter = GetStartedPagerAdapter(supportFragmentManager)
-        
         binding.pagerGetstarted.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
             override fun onPageScrolled(
                 position: Int,
@@ -52,6 +51,7 @@ class GetStartedActivity: AppCompatActivity() {
             }
 
         })
+
         binding.btnRight.setOnClickListener {
             position = binding.pagerGetstarted.currentItem;
             if (position < 3) {

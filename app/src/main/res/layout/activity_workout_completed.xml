@@ -1,67 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="4dp"
     android:orientation="vertical"
-    tools:context=".ui.tab.home.WorkoutCompletedActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/ps_bold"
-        android:textColor="@color/black"
-        android:gravity="center_horizontal"
-        android:text="WORKOUT COMPLETED"
-        android:textSize="48dp"
-        android:textStyle="bold" />
+    android:padding="4dp"
+    tools:context=".ui.tab.home.workout.WorkoutCompletedActivity">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ilustrasio13"/>
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ilustrasio13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:layout_marginTop="8dp"
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/ps_bold"
+        android:gravity="center_horizontal"
+        android:text="WORKOUT COMPLETED"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ps_bold"
-        android:textColor="@color/black"
         android:gravity="center_horizontal"
+        android:layout_marginTop="64dp"
         android:text="500 Kcal"
+        android:textColor="@color/black"
         android:textSize="36dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:layout_marginTop="8dp"
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ps"
         android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
         android:text="Calories Burned"
         android:textSize="28dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        app:cardCornerRadius="32dp"
         android:layout_gravity="center_horizontal"
-        app:cardBackgroundColor="@color/teal_200">
+        app:cardBackgroundColor="@color/main"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:fontFamily="@font/ps_bold"
-            android:textStyle="bold"
             android:gravity="center"
             android:text="Finish"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </com.google.android.material.card.MaterialCardView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

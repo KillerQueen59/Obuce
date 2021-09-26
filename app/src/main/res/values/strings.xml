@@ -5,6 +5,10 @@
     <string name="measure">What is your weight and height?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan_makanan">Scan makanan</string>
+    <string name="recommended_meals">Recommended Meals</string>
+    <string name="you_required_1900kcal_2000kcal">You required <b>1900KCal - 2000KCal</b></string>
+    <string name="sort_by">Sort By:</string>
 
     <string-array name="datatitle">
         <item>Arm Raises</item>
@@ -42,4 +46,9 @@
         <item>@drawable/screenshottwolistusecase3_3</item>
         <item>@drawable/screenshottwolistusecase3_3</item>
     </integer-array>
+
+    <array name="sortFood">
+        <item>Recommended</item>
+        <item>Best Deal</item>
+    </array>
 </resources>

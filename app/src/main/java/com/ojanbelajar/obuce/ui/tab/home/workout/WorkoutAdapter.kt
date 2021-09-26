@@ -1,4 +1,4 @@
-package com.ojanbelajar.obuce.ui.tab.home
+package com.ojanbelajar.obuce.ui.tab.home.workout
 
 import android.content.Context
 import android.content.Intent
@@ -7,15 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.R
-import com.ojanbelajar.obuce.databinding.ItemListWorkoutBinding
-import com.ojanbelajar.obuce.databinding.OnboardItemBinding
-import com.ojanbelajar.obuce.ui.onboard.Onboard
+
 class WorkoutAdapter(private val context: Context,private val listWorkout: ArrayList<Workout>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.civ_workout)
@@ -37,7 +33,7 @@ class WorkoutAdapter(private val context: Context,private val listWorkout: Array
         holder.tvtime.text = listworkoutt.time
 
         holder.itemView.setOnClickListener{
-            val movedetailuseractivityworkout = Intent(context,WorkoutActivity::class.java)
+            val movedetailuseractivityworkout = Intent(context, WorkoutActivity::class.java)
             context.startActivity(movedetailuseractivityworkout)
 //            movedetailuseractivityworkout.putExtra(DetailUserActivity.EXTRA_DATA,dataUser)
 //            mContextt.startActivity(movedetailuseractivity)

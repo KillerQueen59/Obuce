@@ -20,4 +20,8 @@ class BasicProfileFragment: Fragment() {
         binding = FragmentBasicProfileBinding.inflate(inflater,container,false)
         return binding.root
     }
+
+    fun isCheck(){
+
+    }
 }
