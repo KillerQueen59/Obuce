@@ -9,6 +9,20 @@
     <string name="recommended_meals">Recommended Meals</string>
     <string name="you_required_1900kcal_2000kcal">You required <b>1900KCal - 2000KCal</b></string>
     <string name="sort_by">Sort By:</string>
+    <string name="food_scan">Food Scan</string>
+    <string name="scanning_food_illustration">Scanning food illustration</string>
+    <string name="how_to_use">How to Use</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="food_name">Food Name</string>
+    <string name="zero">0</string>
+    <string name="calories">Cal</string>
+    <string name="nutrition_facts_daily_value">Nutrition Facts (% daily value)</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps_to_make_it_yourself">Steps to make it yourself</string>
+    <string name="nutrition_name">Nut</string>
+    <string name="gram">g</string>
+    <string name="open_daily_value">(</string>
+    <string name="close_daily_value">%)</string>
 
     <string-array name="datatitle">
         <item>Arm Raises</item>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Obuce">
         <activity
+            android:name=".ui.tab.home.food.scan.ScanResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.tab.home.food.scan.HowToScanActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.tab.home.workout.WorkoutCompletedActivity"
             android:exported="true" />
         <activity
@@ -18,15 +24,18 @@
         <activity
             android:name=".ui.tab.home.workout.ListWorkoutActivity"
             android:exported="true" />
-        <activity android:name=".ui.tab.home.food.FoodRecommendationActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".ui.tab.home.food.FoodRecommendationActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.tab.home.workout.WorkoutMethodeActivity"
             android:exported="true" />
-        <activity android:name=".ui.tab.home.food.ListFoodActivity"
-            android:exported="true"/>
-        <activity android:name=".ui.tab.home.food.DetailFoodActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".ui.tab.home.food.ListFoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.tab.home.food.DetailFoodActivity"
+            android:exported="true" />
         <activity android:name=".ui.MainActivity" />
         <activity
             android:name=".ui.SplashScreen"

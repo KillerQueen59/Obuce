@@ -7,6 +7,7 @@ import android.view.Gravity
 import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityFoodRecommendationBinding
 import android.R
+import com.ojanbelajar.obuce.ui.tab.home.food.scan.HowToScanActivity
 import com.synnapps.carouselview.ImageListener
 import org.jetbrains.anko.startActivity
 
@@ -28,6 +29,9 @@ class FoodRecommendationActivity: AppCompatActivity() {
         binding.carouselView.setImageListener(imageListener)
         binding.listFood.setOnClickListener {
             startActivity<ListFoodActivity>()
+        }
+        binding.scanFood.setOnClickListener {
+            startActivity<HowToScanActivity>()
         }
     }
 

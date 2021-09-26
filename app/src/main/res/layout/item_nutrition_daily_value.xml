@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nutrition_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_baseline_circle_32"
+        android:text="@string/nutrition_name"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintCircleRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/nutrition_fact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/nutrition_name"
+        app:layout_constraintStart_toStartOf="@+id/nutrition_name"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_name">
+        <TextView
+            android:id="@+id/nutrition_mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/nutrition_mass_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gram"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/nutrition_name"
+        app:layout_constraintStart_toStartOf="@+id/nutrition_name"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_fact">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_daily_value"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/nutrition_daily_value_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_daily_value"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
