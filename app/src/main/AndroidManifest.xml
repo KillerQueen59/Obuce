@@ -36,6 +36,8 @@
         <activity
             android:name=".ui.tab.home.food.ListFoodActivity"
             android:exported="true" />
+        <activity android:name=".ui.tab.home.dictionary.DictionaryFoodActivity"
+            android:exported="true"/>
         <activity
             android:name=".ui.tab.home.food.DetailFoodActivity"
             android:exported="true" />
