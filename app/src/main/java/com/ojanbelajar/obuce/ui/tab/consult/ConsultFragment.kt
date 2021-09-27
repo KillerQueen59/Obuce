@@ -5,13 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.databinding.FragmentConsultBinding
+import com.ojanbelajar.obuce.ui.tab.home.workout.Workout
 
 
 class ConsultFragment : Fragment() {
 
     private var _binding: FragmentConsultBinding?=null
     private val binding get() = _binding!!
+    val arraylistConsultData = ArrayList<Consult>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,6 +24,35 @@ class ConsultFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentConsultBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val addAllData = preparedData()
+        arraylistConsultData.addAll(addAllData)
+        rvListSetup()
+
+    }
+
+    private fun preparedData(): ArrayList<Consult> {
+        val dataname = resources.getStringArray(R.array.datanameconsult)
+        val datacompany = resources.getStringArray(R.array.dataconsulltcompany)
+        val dataPhoto = resources.obtainTypedArray(R.array.dataimage)
+        val listconsult = ArrayList<Consult>()
+        for (i in dataname.indices) {
+            val work = Consult(dataname[i], datacompany[i], dataPhoto.getResourceId(i, 0))
+            listconsult.add(work)
+        }
+
+        return listconsult
+    }
+
+    private fun rvListSetup() {
+        binding.rvListtconsult.setHasFixedSize(true)
+        binding.rvListtconsult.layoutManager = LinearLayoutManager(activity)
+        val adapterConsult = ConsultAdapter(arraylistConsultData)
+        binding.rvListtconsult.adapter = adapterConsult
     }
 
     override fun onDestroyView() {
