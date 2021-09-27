@@ -1,7 +1,7 @@
 package com.ojanbelajar.obuce.ui.tab.home.food.scan
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.R
 
 class ScanResultActivity : AppCompatActivity() {

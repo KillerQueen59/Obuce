@@ -1,8 +1,7 @@
 package com.ojanbelajar.obuce.ui.tab.consult
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ojanbelajar.obuce.R
+import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityChatConsultBinding
 import org.jetbrains.anko.startActivity
 

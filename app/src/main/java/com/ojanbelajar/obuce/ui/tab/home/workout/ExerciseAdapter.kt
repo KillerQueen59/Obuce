@@ -2,16 +2,10 @@ package com.ojanbelajar.obuce.ui.tab.home.workout
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.ExerciseMethodEntity
 import com.ojanbelajar.obuce.databinding.ItemExcerciseBinding
 import org.jetbrains.anko.startActivity

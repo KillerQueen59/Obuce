@@ -7,15 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.R
+import com.ojanbelajar.obuce.data.source.local.entity.ConsultEntity
 import com.ojanbelajar.obuce.databinding.FragmentConsultBinding
-import com.ojanbelajar.obuce.ui.tab.home.workout.Workout
 
 
 class ConsultFragment : Fragment() {
 
     private var _binding: FragmentConsultBinding?=null
     private val binding get() = _binding!!
-    val arraylistConsultData = ArrayList<Consult>()
+    val arraylistConsultData = ArrayList<ConsultEntity>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,13 +35,13 @@ class ConsultFragment : Fragment() {
 
     }
 
-    private fun preparedData(): ArrayList<Consult> {
+    private fun preparedData(): ArrayList<ConsultEntity> {
         val dataname = resources.getStringArray(R.array.datanameconsult)
         val datacompany = resources.getStringArray(R.array.dataconsulltcompany)
         val dataPhoto = resources.obtainTypedArray(R.array.dataimage)
-        val listconsult = ArrayList<Consult>()
+        val listconsult = ArrayList<ConsultEntity>()
         for (i in dataname.indices) {
-            val work = Consult(dataname[i], datacompany[i], dataPhoto.getResourceId(i, 0))
+            val work = ConsultEntity(dataname[i], datacompany[i], dataPhoto.getResourceId(i, 0))
             listconsult.add(work)
         }
 
