@@ -1,8 +1,6 @@
 package com.ojanbelajar.obuce.ui.tab.home.food
 
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager

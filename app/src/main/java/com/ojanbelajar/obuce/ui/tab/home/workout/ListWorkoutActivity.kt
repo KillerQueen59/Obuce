@@ -6,10 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.ExerciseMethodEntity
+import com.ojanbelajar.obuce.data.source.local.entity.WorkoutEntity
 import com.ojanbelajar.obuce.databinding.ActivityListWorkoutBinding
 
 class ListWorkoutActivity : AppCompatActivity() {
-    var listonboardItem = ArrayList<Workout>()
+    var listonboardItem = ArrayList<WorkoutEntity>()
 
     lateinit var binding: ActivityListWorkoutBinding
     lateinit var exercise: ExerciseMethodEntity
@@ -31,14 +32,14 @@ class ListWorkoutActivity : AppCompatActivity() {
         binding.rvListworkout.adapter = workoutadapter
 
     }
-    private val listWorksout: ArrayList<Workout>
+    private val listWorksout: ArrayList<WorkoutEntity>
         get() {
             val datatitle = resources.getStringArray(R.array.datatitle)
             val datatime = resources.getStringArray(R.array.datatime)
             val dataPhoto = resources.obtainTypedArray(R.array.dataimage)
-            val listwork = ArrayList<Workout>()
+            val listwork = ArrayList<WorkoutEntity>()
             for (i in datatitle.indices) {
-                val work = Workout(datatitle[i], datatime[i], dataPhoto.getResourceId(i, 0))
+                val work = WorkoutEntity(datatitle[i], datatime[i], dataPhoto.getResourceId(i, 0))
                 listwork.add(work)
             }
 

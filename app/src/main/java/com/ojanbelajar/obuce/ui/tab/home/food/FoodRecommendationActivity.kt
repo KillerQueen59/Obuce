@@ -1,12 +1,9 @@
 package com.ojanbelajar.obuce.ui.tab.home.food
 
-import android.annotation.SuppressLint
-import android.app.ActionBar
+import android.R
 import android.os.Bundle
-import android.view.Gravity
 import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityFoodRecommendationBinding
-import android.R
 import com.ojanbelajar.obuce.ui.tab.home.food.scan.HowToScanActivity
 import com.synnapps.carouselview.ImageListener
 import org.jetbrains.anko.startActivity

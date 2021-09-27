@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.ExerciseMethodEntity
 import com.ojanbelajar.obuce.databinding.ActivityWorkoutMethodeBinding
-import org.jetbrains.anko.startActivity
 
 class WorkoutMethodeActivity : AppCompatActivity() {
     lateinit var binding: ActivityWorkoutMethodeBinding

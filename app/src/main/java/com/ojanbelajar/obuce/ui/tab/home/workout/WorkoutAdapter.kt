@@ -11,8 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.R
+import com.ojanbelajar.obuce.data.source.local.entity.WorkoutEntity
 
-class WorkoutAdapter(private val context: Context,private val listWorkout: ArrayList<Workout>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
+class WorkoutAdapter(private val context: Context,private val listWorkoutEntity: ArrayList<WorkoutEntity>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.civ_workout)
         var tvtitle: TextView = itemView.findViewById(R.id.tv_title_workout)
@@ -27,7 +28,7 @@ class WorkoutAdapter(private val context: Context,private val listWorkout: Array
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val listworkoutt = listWorkout[position]
+        val listworkoutt = listWorkoutEntity[position]
         Glide.with(context).load(listworkoutt.image).apply(RequestOptions().override(75,75)).into(holder.imgPhoto)
         holder.tvtitle.text = listworkoutt.title
         holder.tvtime.text = listworkoutt.time
@@ -41,11 +42,11 @@ class WorkoutAdapter(private val context: Context,private val listWorkout: Array
     }
 
     override fun getItemCount(): Int {
-        return listWorkout.size
+        return listWorkoutEntity.size
     }
 
 }
-//class WorkoutAdapter (private val context: Context, private val data: ArrayList<Workout>): PagerAdapter() {
+//class WorkoutAdapter (private val context: Context, private val data: ArrayList<WorkoutEntity>): PagerAdapter() {
 //    override fun getCount(): Int {
 //        return data.size
 //    }

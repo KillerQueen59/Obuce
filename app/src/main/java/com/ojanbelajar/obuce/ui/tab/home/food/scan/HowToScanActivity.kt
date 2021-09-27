@@ -1,12 +1,9 @@
 package com.ojanbelajar.obuce.ui.tab.home.food.scan
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Bitmap
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import com.ojanbelajar.obuce.R
+import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityHowToScanBinding
 import org.jetbrains.anko.startActivity
 
