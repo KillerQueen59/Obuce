@@ -32,6 +32,13 @@
     <string name="worksout">Worksout</string>
     <string name="_6">6</string>
 
+    <!--    DATA ITEM ONBOARD-->
+    <array name="sortFood">
+        <item>Recommended</item>
+        <item>Best Deal</item>
+    </array>
+
+<!--    DATA ITEM HOME MAIN TAB-->
     <string-array name="datatitle">
         <item>Arm Raises</item>
         <item>Arm Raises</item>
@@ -44,17 +51,6 @@
         <item>Arm Raises</item>
         <item>Arm Raises</item>
     </string-array>
-    <string-array name="datanameconsult">
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-        <item>Dr.Reisa Broto Asmoro</item>
-    </string-array>
     <string-array name="datatime">
         <item>00:30</item>
         <item>00:30</item>
@@ -66,18 +62,6 @@
         <item>00:30</item>
         <item>00:30</item>
         <item>00:30</item>
-    </string-array>
-    <string-array name="dataconsulltcompany">
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
-        <item>program dr. OZ Indonesia</item>
     </string-array>
     <integer-array name="dataimage">
         <item>@drawable/screenshottwolistusecase3_3</item>
@@ -92,8 +76,102 @@
         <item>@drawable/screenshottwolistusecase3_3</item>
     </integer-array>
 
-    <array name="sortFood">
-        <item>Recommended</item>
-        <item>Best Deal</item>
-    </array>
+<!--    DATA ITEM CONSULT MAIN TAB-->
+    <string-array name="datanameconsult">
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+        <item>Dr.Reisa Broto Asmoro</item>
+    </string-array>
+    <string-array name="dataconsulltcompany">
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+        <item>program dr. OZ Indonesia</item>
+    </string-array>
+
+<!--    DATA ITEM LIST ITEM HISTORY CONSUMPTION-->
+    <string-array name="dataListHistoryname">
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+        <item>Salad Bowl</item>
+    </string-array>
+    <string-array name="dataListHistorytime">
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+        <item>10:46 AM</item>
+    </string-array>
+    <string-array name="dataListHistoryday">
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+        <item>18 Aug</item>
+    </string-array>
+    <string-array name="dataListHistorycalori">
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+        <item>140 cal</item>
+    </string-array>
+    <string-array name="dataListHistorycomposition">
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+        <item>70 cal x 2Pcs</item>
+    </string-array>
+    <integer-array name="dataListHistorycompositionimage">
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/ilustrasio001</item>
+    </integer-array>
 </resources>

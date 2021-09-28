@@ -19,12 +19,14 @@ class StatisticActivity : AppCompatActivity() {
         val binding = ActivityStatisticBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-                val sectionsPagerAdapter = SectionsPagerAdapter(this)
+        val sectionsPagerAdapter = SectionsPagerAdapter(this)
         binding.viewpgConsult.adapter = sectionsPagerAdapter
         val tabs = binding.tabStatistic
         val viewpg = binding.viewpgConsult
         TabLayoutMediator(tabs,viewpg){tab,position->
             tab.text = TAB_TITLES[position]
         }.attach()
+
+
     }
 }

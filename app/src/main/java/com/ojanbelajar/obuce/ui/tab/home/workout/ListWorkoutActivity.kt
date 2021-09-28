@@ -19,6 +19,7 @@ class ListWorkoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityListWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         exercise = intent.getParcelableExtra("exercise") ?: ExerciseMethodEntity()
         listonboardItem.addAll(listWorksout)
         rvsetup()
