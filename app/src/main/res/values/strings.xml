@@ -27,6 +27,10 @@
     <string name="statistic_blank_fragment">statistic_blank_fragment</string>
     <string name="sudahkah_kamu_berkonsultasi_dengan_dr_abiyyu_h_yuk_konsultasi_kesehatan_mu_sekarang">sudahkah kamu berkonsultasi dengan dr abiyyu h yuk konsultasi kesehatan mu sekarang</string>
     <string name="program_dr_oz_indonesia">program dr. OZ Indonesia</string>
+    <string name="hello_blank_fragment_data_statistic">hello_blank_fragment_data statistic</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="worksout">Worksout</string>
+    <string name="_6">6</string>
 
     <string-array name="datatitle">
         <item>Arm Raises</item>

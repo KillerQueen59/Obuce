@@ -19,5 +19,10 @@
         android:id="@+id/statiscticFragment"
         android:name="com.ojanbelajar.obuce.ui.tab.statistic.StatiscticFragment"
         android:label="fragment_statisctic"
-        tools:layout="@layout/fragment_statisctic" />
+        tools:layout="@layout/fragment_statistic" />
+    <activity
+        android:id="@+id/statisticActivity"
+        android:name="com.ojanbelajar.obuce.ui.tab.statistic.tab.StatisticActivity"
+        android:label="activity_statistic"
+        tools:layout="@layout/activity_statistic" />
 </navigation>
