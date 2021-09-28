@@ -247,6 +247,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_dictionary"
         app:cardBackgroundColor="@color/white"
         app:cardElevation="8dp"
         android:layout_width="match_parent"

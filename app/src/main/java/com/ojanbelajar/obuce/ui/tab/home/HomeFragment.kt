@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ojanbelajar.obuce.databinding.FragmentHomeBinding
+import com.ojanbelajar.obuce.ui.tab.home.dictionary.DictionaryFoodActivity
 import com.ojanbelajar.obuce.ui.tab.home.food.FoodRecommendationActivity
 import com.ojanbelajar.obuce.ui.tab.home.workout.WorkoutMethodeActivity
 import org.jetbrains.anko.support.v4.startActivity
@@ -50,6 +51,11 @@ class HomeFragment : Fragment() {
         binding.cvChooseworkout.setOnClickListener {
             startActivity<WorkoutMethodeActivity>()
         }
+
+        binding.cvDictionary.setOnClickListener {
+            startActivity<DictionaryFoodActivity>()
+        }
+
     }
 
     override fun onDestroyView() {
