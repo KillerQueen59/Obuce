@@ -23,6 +23,11 @@ class StatisticActivity : AppCompatActivity() {
         binding.viewpgConsult.adapter = sectionsPagerAdapter
         val tabs = binding.tabStatistic
         val viewpg = binding.viewpgConsult
+
+        //SAMPLE CODE to disable swiping in viewpager2
+        viewpg.isUserInputEnabled = false
+
+        //control tab management
         TabLayoutMediator(tabs,viewpg){tab,position->
             tab.text = TAB_TITLES[position]
         }.attach()

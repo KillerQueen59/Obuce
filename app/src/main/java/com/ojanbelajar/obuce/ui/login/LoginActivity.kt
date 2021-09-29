@@ -2,7 +2,6 @@ package com.ojanbelajar.obuce.ui.login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
 import com.ojanbelajar.obuce.databinding.ActivityLoginBinding
 import com.ojanbelajar.obuce.ui.MainActivity
 import com.ojanbelajar.obuce.ui.getstarted.GetStartedActivity

@@ -2,11 +2,9 @@ package com.ojanbelajar.obuce.ui.tab.home.dictionary
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.data.source.local.entity.DictionaryEntity
 import com.ojanbelajar.obuce.databinding.ActivityDictionaryFoodBinding
-import com.ojanbelajar.obuce.ui.tab.home.food.ListFoodAdapter
 
 class DictionaryFoodActivity: AppCompatActivity() {
 

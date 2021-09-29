@@ -1,15 +1,12 @@
 package com.ojanbelajar.obuce.ui.tab.statistic.tab.history
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 import com.ojanbelajar.obuce.databinding.ItemHistoryStatisticBinding
-import com.ojanbelajar.obuce.ui.tab.consult.ConsultAdapter
 
 class HistoryStatisticAdapter(private val arraylishistorytdata:ArrayList<HistoryEntity>)
     : RecyclerView.Adapter<HistoryStatisticAdapter.MyViewHolder>() {

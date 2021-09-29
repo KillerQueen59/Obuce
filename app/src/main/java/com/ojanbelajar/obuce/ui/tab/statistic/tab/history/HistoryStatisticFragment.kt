@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 import com.ojanbelajar.obuce.databinding.FragmentHistoryStaticticBinding
-import com.ojanbelajar.obuce.ui.tab.home.HomeFragment
 import org.jetbrains.anko.support.v4.startActivity
 
 

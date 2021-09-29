@@ -1,7 +1,7 @@
 package com.ojanbelajar.obuce.ui.tab.statistic.tab.history
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
