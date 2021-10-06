@@ -31,71 +31,76 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rectangle_"
         android:orientation="vertical"
         android:paddingHorizontal="40dp"
         android:paddingTop="20dp"
+        android:paddingBottom="50dp"
+        app:layout_constraintHeight_max="330dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" >
+        app:layout_constraintStart_toStartOf="parent">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/ps"
             android:text="Email"
             android:textColor="@color/white"
-            android:fontFamily="@font/ps"/>
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/bg_round_white"
-            android:layout_width="match_parent"
-            android:paddingHorizontal="10dp"
             android:fontFamily="@font/ps"
-            android:layout_height="40dp"/>
+            android:paddingHorizontal="10dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/ps"
             android:text="Password"
             android:textColor="@color/white"
-            android:fontFamily="@font/ps"/>
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/bg_round_white"
-            android:layout_width="match_parent"
-            android:paddingHorizontal="10dp"
-            android:inputType="textPassword"
             android:fontFamily="@font/ps"
-            android:layout_height="40dp"/>
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp" />
+
         <TextView
             android:id="@+id/txt_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/ps"
             android:gravity="center"
             android:text="@string/dont_have_account"
             android:textColor="@color/white"
-            android:fontFamily="@font/ps"/>
+            android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_round_white_2"
-            android:textColor="@color/main"
+            android:fontFamily="@font/ps_bold"
             android:text="Sign In"
             android:textAllCaps="false"
-            android:textSize="21dp"
-            android:fontFamily="@font/ps_bold"
-            android:layout_marginHorizontal="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/main"
+            android:textSize="22dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

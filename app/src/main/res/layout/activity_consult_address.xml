@@ -22,61 +22,68 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:orientation="vertical"
-            android:padding="4dp"
-            android:layout_gravity="center">
+            android:padding="20dp">
 
             <LinearLayout
-                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:orientation="horizontal"
-                android:layout_marginStart="8dp">
+                android:orientation="horizontal">
+
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_margin="12dp"
                     android:src="@drawable/screenshottwo8_2" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr.Reisa Broto Asmoro"/>
+                    android:layout_marginLeft="12dp"
+                    android:text="Dr.Reisa Broto Asmoro" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ps_bold"
                 android:text="Hospital Profile"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                android:fontFamily="@font/ps_bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="normal"
                 android:fontFamily="@font/ps"
-                android:text="@string/program_dr_oz_indonesia"/>
+                android:text="@string/program_dr_oz_indonesia"
+                android:textStyle="normal" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Selanjutnya"
-                android:textColor="@color/teal_200"
                 android:layout_gravity="right"
-                android:layout_marginRight="8dp" />
+                android:layout_marginRight="8dp"
+                android:text="Selanjutnya"
+                android:textColor="@color/teal_200" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tempat Praktek"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:src="@drawable/screenshotfour8_33"/>
+                android:src="@drawable/screenshotfour8_33" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KONSULTASI"/>
+                android:text="KONSULTASI" />
 
         </LinearLayout>
 

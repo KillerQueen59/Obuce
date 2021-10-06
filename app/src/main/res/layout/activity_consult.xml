@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="4dp"
+    android:padding="16dp"
     android:orientation="vertical"
     tools:context=".ui.tab.consult.ConsultActivity">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:padding="4dp"
             android:layout_alignParentRight="true"
-            app:cardCornerRadius="16dp"
-            >
+            android:padding="4dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_baseline_favorite_24"
-                android:background="@color/teal_200"></de.hdodenhof.circleimageview.CircleImageView>
+                android:layout_gravity="center"
+                android:background="@color/teal_200"
+                android:src="@drawable/ic_baseline_favorite_24" />
         </com.google.android.material.card.MaterialCardView>
 
         <TextView
@@ -35,13 +38,16 @@
             android:text="Hello, Irsyad :)"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginVertical="16dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="16dp">
         <LinearLayout

@@ -15,10 +15,12 @@
         android:layout_height="wrap_content">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:src="@drawable/monster_face"/>
+            android:src="@drawable/monster_face" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,23 +31,25 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ps"
                 android:text="Monday,19 Agustus"
-                android:textSize="12sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12:00"
-                android:textSize="12sp"
                 android:fontFamily="@font/ps"
-                android:textColor="@color/black"/>
+                android:text="12:00"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello, Irsyad :)"
-                android:textSize="24sp"
-                android:textStyle="bold"
                 android:fontFamily="@font/ps_bold"
-                android:textColor="@color/black"/>
+                android:text="Hello, Irsyad :)"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 
