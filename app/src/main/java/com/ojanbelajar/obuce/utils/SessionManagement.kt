@@ -53,7 +53,7 @@ class SessionManagement(var context: Context) {
     val isFirstOpen: Boolean
         get() = pref.getBoolean(IS_FIRST, false)
 
-    fun createLoginSession(user: UserEntity,token: String){
+    fun createLoginSession(user: UserEntity){
         editor.putBoolean(IS_LOGIN,true)
         editor.putInt(KEY_ID, user.id)
         editor.putString(KEY_EMAIL, user.email)
@@ -61,7 +61,6 @@ class SessionManagement(var context: Context) {
         editor.putInt(KEY_GENDER, user.gender)
         editor.putFloat(KEY_HEIGHT, user.height.toFloat())
         editor.putFloat(KEY_WEIGHT, user.weight.toFloat())
-        editor.putString(KEY_TOKEN,token)
         editor.commit()
     }
 
@@ -85,5 +84,10 @@ class SessionManagement(var context: Context) {
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         context.startActivity(intent)
 
+    }
+
+    fun createOnBoardSession() {
+        editor.putBoolean(IS_FIRST,true)
+        editor.commit()
     }
 }

@@ -32,13 +32,6 @@ class WorkoutAdapter(private val context: Context,private val listWorkoutEntity:
         Glide.with(context).load(listworkoutt.image).apply(RequestOptions().override(75,75)).into(holder.imgPhoto)
         holder.tvtitle.text = listworkoutt.title
         holder.tvtime.text = listworkoutt.time
-
-        holder.itemView.setOnClickListener{
-            val movedetailuseractivityworkout = Intent(context, WorkoutActivity::class.java)
-            context.startActivity(movedetailuseractivityworkout)
-//            movedetailuseractivityworkout.putExtra(DetailUserActivity.EXTRA_DATA,dataUser)
-//            mContextt.startActivity(movedetailuseractivity)
-        }
     }
 
     override fun getItemCount(): Int {

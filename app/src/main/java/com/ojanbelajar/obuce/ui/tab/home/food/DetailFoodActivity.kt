@@ -12,5 +12,9 @@ class DetailFoodActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.back.setOnClickListener {
+            finish()
+        }
     }
+
 }

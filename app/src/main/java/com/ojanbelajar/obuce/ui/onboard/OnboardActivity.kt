@@ -7,18 +7,23 @@ import com.google.android.material.tabs.TabLayout
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.databinding.ActivityOnboardBinding
 import com.ojanbelajar.obuce.ui.login.LoginActivity
+import com.ojanbelajar.obuce.utils.SessionManagement
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class OnboardActivity: AppCompatActivity() {
 
     lateinit var binding: ActivityOnboardBinding
     var onboardItem = ArrayList<Onboard>()
     var position = 0
+    lateinit var session: SessionManagement
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOnboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        session = SessionManagement(this)
+        if(session.checkFirst()) toLogin()
         actionBar?.hide()
         defineData()
     }
@@ -77,7 +82,11 @@ class OnboardActivity: AppCompatActivity() {
 
         })
     }
-
+    fun toLogin() {
+        startActivity<LoginActivity>()
+        session.createOnBoardSession()
+        finish()
+    }
 
 
 }

@@ -27,6 +27,9 @@ class ListFoodActivity: AppCompatActivity() {
         data.add(FoodEntity("Salmon","","120Kcal","Rp.50.000"))
         data.add(FoodEntity("Salmon","","120Kcal","Rp.50.000"))
         adapter = ListFoodAdapter(this,data)
+        binding.back.setOnClickListener {
+            finish()
+        }
         setSpinner()
         setRv()
     }

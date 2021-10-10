@@ -7,6 +7,10 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.databinding.ActivityMainBinding
+import android.content.Intent
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,5 +32,13 @@ class MainActivity : AppCompatActivity() {
 //        ).build()
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val a = Intent(Intent.ACTION_MAIN)
+        a.addCategory(Intent.CATEGORY_HOME)
+        a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(a)
     }
 }

@@ -15,7 +15,9 @@ class HowToScanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHowToScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.back.setOnClickListener {
+            finish()
+        }
         binding.scanFood.setOnClickListener{
             dispatchTakePictureIntent()
             //startActivity<ScanResultActivity>()

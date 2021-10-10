@@ -8,6 +8,7 @@ import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.ExerciseMethodEntity
 import com.ojanbelajar.obuce.data.source.local.entity.WorkoutEntity
 import com.ojanbelajar.obuce.databinding.ActivityListWorkoutBinding
+import org.jetbrains.anko.startActivity
 
 class ListWorkoutActivity : AppCompatActivity() {
     var listonboardItem = ArrayList<WorkoutEntity>()
@@ -24,6 +25,9 @@ class ListWorkoutActivity : AppCompatActivity() {
         listonboardItem.addAll(listWorksout)
         rvsetup()
         binding.videoView.background = resources.getDrawable(exercise.background)
+        binding.btnNext.setOnClickListener {
+            startActivity<WorkoutActivity>()
+        }
     }
 
     private fun rvsetup() {

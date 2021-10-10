@@ -144,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scan_food">
@@ -151,32 +152,62 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp">
+                >
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/recommended_meals"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView17"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linear"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/you_required_1900kcal_2000kcal"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:src="@drawable/next"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+                    android:padding="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recommended_meals"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/you_required_1900kcal_2000kcal"
+                            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:src="@drawable/next" />
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -185,7 +216,7 @@
                     android:layout_marginTop="4dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/meal"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/linear"
                     tools:layout_editor_absoluteX="12dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ class ChatConsultActivity : AppCompatActivity() {
         val binding = ActivityChatConsultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ivsendchatconsult.setOnClickListener {
+        binding.profileLinear.setOnClickListener {
             startActivity<ConsultAddressActivity>()
         }
     }

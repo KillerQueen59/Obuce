@@ -1,64 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="4dp">
+    android:background="@color/main_dark"
+    android:layout_margin="8dp">
 
-    <com.google.android.material.card.MaterialCardView
-        app:cardBackgroundColor="@color/white"
-        app:cardElevation="8dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:padding="4dp"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="16dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:padding="4dp"
+            tools:src="@tools:sample/avatars"
+            android:layout_gravity="center_vertical"
+        />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_item_photo"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                tools:src="@tools:sample/avatars"
-                android:padding="4dp"
-                android:layout_gravity="center_vertical"/>
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tv_item_name"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/img_item_photo"
-                android:layout_toRightOf="@id/img_item_photo"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="consult_name" />
 
-                <TextView
-                    android:id="@+id/tv_item_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:text="consult_name" />
+            <TextView
+                android:id="@+id/tv_item_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="description" />
 
-                <TextView
-                    android:id="@+id/tv_item_company"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="2"
-                    tools:text="description" />
-
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -88,18 +83,21 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_baseline_star_rate_24"
                         android:layout_marginLeft="4dp"/>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="KONSULTASI"
-                        android:textSize="10dp"
-                        android:id="@+id/btnconsultasiselected"
-                        android:layout_marginLeft="60dp"/>
                 </LinearLayout>
 
-            </LinearLayout>
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
 
-</LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="KONSULTASI"
+                    android:textSize="10dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/btnconsultasiselected"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
