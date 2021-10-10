@@ -8,12 +8,12 @@
         android:id="@+id/consultFragment"
         android:icon="@drawable/ic_baseline_support_agent_24"
         android:title="consult" />
-<!--    <item-->
-<!--        android:id="@+id/statiscticFragment"-->
-<!--        android:icon="@drawable/ic_baseline_show_chart_24"-->
-<!--        android:title="statistic" />-->
     <item
-        android:id="@+id/statisticActivity"
+        android:id="@+id/statisticFragment"
         android:icon="@drawable/ic_baseline_show_chart_24"
         android:title="statistic" />
+  <!--  <item
+        android:id="@+id/statisticActivity"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="statistic" />-->
 </menu>
