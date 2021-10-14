@@ -4,20 +4,30 @@ import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.databinding.ActivityHowToScanBinding
+import kotlinx.android.synthetic.main.activity_how_to_scan.*
 import org.jetbrains.anko.startActivity
 
 class HowToScanActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityHowToScanBinding
+    private lateinit var binding: ActivityHowToScanBinding
+    private lateinit var viewModel: HowToScanViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHowToScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.back.setOnClickListener {
             finish()
         }
+
+        viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HowToScanViewModel::class.java)
+
+        showRecyclerList()
+
         binding.scanFood.setOnClickListener{
             dispatchTakePictureIntent()
             //startActivity<ScanResultActivity>()
@@ -40,5 +50,16 @@ class HowToScanActivity : AppCompatActivity() {
                 startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
             }
         }
+    }
+
+    private fun showRecyclerList() {
+        rv_howToScan.layoutManager = LinearLayoutManager(this)
+        val listSimpleItemAdapter = ListSimpleItemAdapter(viewModel.steps)
+        rv_howToScan.adapter = listSimpleItemAdapter
+
+        listSimpleItemAdapter.setOnItemClickCallback(object: ListSimpleItemAdapter.OnItemClickCallback{
+            override fun onItemClicked(data: String) {
+            }
+        })
     }
 }

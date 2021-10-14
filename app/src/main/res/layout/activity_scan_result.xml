@@ -83,12 +83,13 @@
             app:layout_constraintTop_toBottomOf="@+id/foodCalories" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/foodNutritionsList"
+            android:id="@+id/rv_nutritionFacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/foodName"
-            app:layout_constraintTop_toBottomOf="@+id/foodNutritionsTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/foodNutritionsTitle"
+            tools:listitem="@layout/item_nutrition_daily_value" />
 
         <TextView
             android:id="@+id/foodIngredientsTitle"
@@ -98,10 +99,10 @@
             android:text="@string/ingredients"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/foodName"
-            app:layout_constraintTop_toBottomOf="@+id/foodNutritionsList" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_nutritionFacts" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/foodIngredientsList"
+            android:id="@+id/rv_foodIngredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -116,10 +117,10 @@
             android:text="@string/steps_to_make_it_yourself"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/foodName"
-            app:layout_constraintTop_toBottomOf="@+id/foodIngredientsList" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_foodIngredients" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/foodCookingStepsList"
+            android:id="@+id/rv_foodCookingSteps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
