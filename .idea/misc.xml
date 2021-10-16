@@ -24,14 +24,21 @@
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/OBUCEF/Obuce-master/app/src/main/res/layout/splash_screen.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/OBUCEF/Obuce-master/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1234375" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/drawable-v24/ic_baseline_add_circle_outline_24.xml" value="0.25" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.13405797101449277" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_consult.xml" value="0.11197916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_consult_address.xml" value="0.11197916666666667" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_detail_food.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_dictionary_food.xml" value="0.115625" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_food_recommendation.xml" value="0.12604166666666666" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_get_started.xml" value="0.22554347826086957" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_history.xml" value="0.13020833333333334" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_how_to_scan.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_food.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_history.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_workout.xml" value="0.12604166666666666" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_main.xml" value="0.15942028985507245" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_onboard.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_scan_result.xml" value="0.115625" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_statistic.xml" value="0.176" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_workout.xml" value="0.13405797101449277" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_workout_completed.xml" value="0.1" />
@@ -39,18 +46,22 @@
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/bottom_popup.xml" value="0.12604166666666666" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_basic_profile.xml" value="0.12447916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_consult.xml" value="0.12447916666666667" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_data_statistic.xml" value="0.24094202898550723" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_data_statistic.xml" value="0.12307692307692308" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_gender.xml" value="0.12447916666666667" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_history_statictic.xml" value="0.24094202898550723" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_history_statictic.xml" value="0.128" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_home.xml" value="0.15942028985507245" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_list_history.xml" value="0.13020833333333334" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_measure.xml" value="0.12447916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_statisctic.xml" value="0.12447916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/fragment_statistic.xml" value="0.1171875" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_dictionary.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_excercise.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_food.xml" value="0.115625" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_history_statistic.xml" value="0.4" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_list_workout.xml" value="0.13405797101449277" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.13405797101449277" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_row_consult.xml" value="0.264" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/item_simple_list.xml" value="0.115625" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/onboard_item.xml" value="0.12447916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/spinner_item.xml" value="0.12447916666666667" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/splash_screen.xml" value="0.12447916666666667" />

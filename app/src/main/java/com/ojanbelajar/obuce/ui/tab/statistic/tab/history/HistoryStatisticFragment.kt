@@ -48,7 +48,7 @@ class HistoryStatisticFragment : Fragment() {
         var image = resources.obtainTypedArray(R.array.dataListHistorycompositionimage)
         val arraylistlisthistory = ArrayList<HistoryEntity>()
         for (i in 0 until 2){
-            var listdata = HistoryEntity(name[i], time[i],day[i], calori[i], composition[i],image.getResourceId(i,0))
+            var listdata = HistoryEntity(0,name[i], time[i],day[i], calori[i], composition[i],image.getResourceId(i,0))
             arraylistlisthistory.add(listdata)
         }
         return arraylistlisthistory

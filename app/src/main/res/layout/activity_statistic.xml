@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="4dp"
-    android:orientation="vertical"
-    tools:context=".ui.tab.statistic.tab.StatisticActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/statistics"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/ps_bold"/>
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab_statistic"
-        app:tabTextColor="@color/black"
-        android:background="@color/white"/>
-
-    <androidx.viewpager2.widget.ViewPager2
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewpg_consult"/>
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:orientation="vertical"
+        tools:context=".ui.tab.statistic.tab.StatisticActivity">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ps_bold"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_statistic"
+            app:tabTextColor="@color/black"
+            android:background="@color/white"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewpg_consult"/>
+
+    </LinearLayout>
+
+</layout>

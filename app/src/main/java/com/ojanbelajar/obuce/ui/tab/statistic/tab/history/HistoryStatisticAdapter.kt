@@ -8,7 +8,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 import com.ojanbelajar.obuce.databinding.ItemHistoryStatisticBinding
 
-class HistoryStatisticAdapter(private val arraylishistorytdata:ArrayList<HistoryEntity>)
+class HistoryStatisticAdapter(private val arraylishistorytdata:List<HistoryEntity>)
     : RecyclerView.Adapter<HistoryStatisticAdapter.MyViewHolder>() {
     class MyViewHolder(val binding:ItemHistoryStatisticBinding) : RecyclerView.ViewHolder(binding.root) {
 

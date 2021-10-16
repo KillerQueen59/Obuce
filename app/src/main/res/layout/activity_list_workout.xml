@@ -1,144 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.tab.home.workout.ListWorkoutActivity">
-
-    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="match_parent"
-            android:layout_height="211dp" />
+        tools:context=".ui.tab.home.workout.ListWorkoutActivity">
 
-        <com.google.android.material.card.MaterialCardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginVertical="-40dp"
-            app:cardCornerRadius="32dp">
-            <LinearLayout
+            android:orientation="vertical"
+            >
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="211dp" />
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_marginVertical="-40dp"
+                app:cardCornerRadius="32dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_app3_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/ps_bold"
-                        android:layout_marginTop="16dp"
-                        android:text="Upper Body"
-                        android:textColor="@color/dark"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_marginVertical="16dp"
-                        android:layout_marginHorizontal="64dp"
-                        android:weightSum="1">
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="0.45"
-                            android:paddingVertical="24dp"
-                            android:gravity="center">
-                            <TextView
-                                android:fontFamily="@font/ps_bold"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/dark"
-                                android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:text="500Kcal"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                            <TextView
-                                android:fontFamily="@font/ps"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="12sp"
-                                android:textColor="@color/dark"
-                                android:textAlignment="center"
-                                android:text="Calories Burned"/>
-                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_app3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ps_bold"
+                            android:layout_marginTop="16dp"
+                            android:text="Upper Body"
+                            android:textColor="@color/dark"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.1"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="2dp"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="16dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:weightSum="1">
+                            <LinearLayout
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:background="@color/dark"
-                                android:layout_marginVertical="20dp"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="0.45"
-                            android:paddingVertical="24dp"
-                            android:gravity="center">
-                            <TextView
-                                android:fontFamily="@font/ps_bold"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/dark"
-                                android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:text="16 Mins"/>
+                                android:orientation="vertical"
+                                android:layout_weight="0.45"
+                                android:paddingVertical="24dp"
+                                android:gravity="center">
+                                <TextView
+                                    android:fontFamily="@font/ps_bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/dark"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp"
+                                    android:text="500Kcal"/>
 
-                            <TextView
-                                android:fontFamily="@font/ps"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="12sp"
-                                android:textColor="@color/dark"
-                                android:textAlignment="center"
-                                android:text="Time"/>
+                                <TextView
+                                    android:fontFamily="@font/ps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/dark"
+                                    android:textAlignment="center"
+                                    android:text="Calories Burned"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+                                <TextView
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/dark"
+                                    android:layout_marginVertical="20dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.45"
+                                android:paddingVertical="24dp"
+                                android:gravity="center">
+                                <TextView
+                                    android:fontFamily="@font/ps_bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/dark"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp"
+                                    android:text="16 Mins"/>
+
+                                <TextView
+                                    android:fontFamily="@font/ps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/dark"
+                                    android:textAlignment="center"
+                                    android:text="Time"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+                    <TextView
+                        android:text="Exercises"
+                        android:layout_marginHorizontal="16dp"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/ps"
+                        android:layout_marginVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/item_list_workout"
+                        android:clipToPadding="false"
+                        android:paddingBottom="100dp"
+                        android:id="@+id/rv_listworkout"/>
                 </LinearLayout>
-                <TextView
-                    android:text="Exercises"
-                    android:layout_marginHorizontal="16dp"
-                    android:textColor="@color/dark"
-                    android:fontFamily="@font/ps"
-                    android:layout_marginVertical="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:listitem="@layout/item_list_workout"
-                    android:clipToPadding="false"
-                    android:paddingBottom="100dp"
-                    android:id="@+id/rv_listworkout"/>
-            </LinearLayout>
 
-        </com.google.android.material.card.MaterialCardView>
-    </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="100dp"
-        android:text="Start"
-        android:layout_gravity="bottom"
-        android:layout_marginVertical="16dp"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="100dp"
+            android:text="Start"
+            android:layout_gravity="bottom"
+            android:layout_marginVertical="16dp"
+            android:textAllCaps="false"/>
 
-</FrameLayout>
+    </FrameLayout>
+
+</layout>

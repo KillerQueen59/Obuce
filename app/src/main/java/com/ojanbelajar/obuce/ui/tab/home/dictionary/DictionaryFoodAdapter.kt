@@ -3,17 +3,12 @@ package com.ojanbelajar.obuce.ui.tab.home.dictionary
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.DictionaryEntity
 import com.ojanbelajar.obuce.databinding.ItemDictionaryBinding
-import kotlinx.android.synthetic.main.activity_list_workout.*
 import kotlinx.android.synthetic.main.bottom_popup.view.*
 import org.jetbrains.anko.layoutInflater
 
