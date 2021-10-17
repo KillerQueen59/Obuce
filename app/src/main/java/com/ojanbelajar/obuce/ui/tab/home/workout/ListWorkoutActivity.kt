@@ -26,14 +26,14 @@ class ListWorkoutActivity : AppCompatActivity() {
         rvsetup()
         binding.videoView.background = resources.getDrawable(exercise.background)
         binding.btnNext.setOnClickListener {
-            startActivity<WorkoutActivity>()
+            startActivity<WorkoutActivity>("exercise" to exercise)
         }
     }
 
     private fun rvsetup() {
         binding.rvListworkout.setHasFixedSize(true)
         binding.rvListworkout.layoutManager = LinearLayoutManager(this)
-        val workoutadapter = WorkoutAdapter(this,listonboardItem)
+        val workoutadapter = WorkoutAdapter(this,exercise.exercises)
         binding.rvListworkout.adapter = workoutadapter
 
     }

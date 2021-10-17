@@ -10,9 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.R
+import com.ojanbelajar.obuce.data.source.local.entity.ExerciseEntity
 import com.ojanbelajar.obuce.data.source.local.entity.WorkoutEntity
 
-class WorkoutAdapter(private val context: Context,private val listWorkoutEntity: ArrayList<WorkoutEntity>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
+class WorkoutAdapter(private val context: Context,private val listWorkoutEntity: ArrayList<ExerciseEntity>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.civ_workout)
         var tvtitle: TextView = itemView.findViewById(R.id.tv_title_workout)

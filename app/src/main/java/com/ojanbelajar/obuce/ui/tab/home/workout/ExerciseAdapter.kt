@@ -35,7 +35,7 @@ class ExerciseAdapterViewHolder(private val binding: ItemExcerciseBinding): Recy
     @SuppressLint("SetTextI18n")
     fun bind(exercise: ExerciseMethodEntity, context: Context){
         binding.title.text = exercise.title
-        binding.calories.text = "Burn ${exercise.calories}"
+        binding.calories.text = exercise.calories
         Glide.with(context).load(exercise.background).into(binding.image)
 
     }
