@@ -31,6 +31,8 @@
     <string name="statistics">STATISTICS</string>
     <string name="worksout">Worksout</string>
     <string name="_6">6</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
 
     <!--    DATA ITEM ONBOARD-->
     <array name="sortFood">

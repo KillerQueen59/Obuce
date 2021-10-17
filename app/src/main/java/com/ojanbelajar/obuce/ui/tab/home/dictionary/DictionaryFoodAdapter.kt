@@ -12,7 +12,7 @@ import com.ojanbelajar.obuce.databinding.ItemDictionaryBinding
 import kotlinx.android.synthetic.main.bottom_popup.view.*
 import org.jetbrains.anko.layoutInflater
 
-class DictionaryFoodAdapter ( private val listDictionary: ArrayList<DictionaryEntity>,private val context: Context) :
+class DictionaryFoodAdapter ( private val listDictionary: ArrayList<DictionaryData>,private val context: Context) :
     RecyclerView.Adapter<DictionaryFoodAdapterViewHolder>(){
 
 
@@ -30,6 +30,9 @@ class DictionaryFoodAdapter ( private val listDictionary: ArrayList<DictionaryEn
             dialog.behavior.isDraggable = false
             dialog.setContentView(view)
             dialog.show()
+
+            view.tv_dictionary_popup_name.text = dictionary.name
+            view.tv_dictionary_popup_description.text = dictionary.description
         }
     }
 
@@ -40,10 +43,9 @@ class DictionaryFoodAdapter ( private val listDictionary: ArrayList<DictionaryEn
 }
 
 class DictionaryFoodAdapterViewHolder(private val binding: ItemDictionaryBinding): RecyclerView.ViewHolder(binding.root) {
-    fun bind(dictionary: DictionaryEntity){
-        binding.titleDictionary.text = dictionary.title
-        binding.detailDictionary.text = dictionary.detail
-
+    fun bind(dictionary: DictionaryData){
+        binding.titleDictionary.text = dictionary.name
+        binding.detailDictionary.text = dictionary.description
     }
 
 }

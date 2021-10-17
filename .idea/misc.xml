@@ -125,6 +125,7 @@
         <entry key="app/src/main/res/layout/activity_how_to_scan.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_list_food.xml" value="0.24728260869565216" />
         <entry key="app/src/main/res/layout/activity_scan_result.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bottom_popup.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_food.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.75" />
       </map>
