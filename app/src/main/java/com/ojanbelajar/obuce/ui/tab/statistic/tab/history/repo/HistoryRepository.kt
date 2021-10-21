@@ -1,6 +1,6 @@
-package com.ojanbelajar.obuce.data.source.local.repo.repo
+package com.ojanbelajar.obuce.ui.tab.statistic.tab.history.repo
 
-import com.ojanbelajar.obuce.data.source.local.db.HistoryDao
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db.HistoryDao
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 
 class HistoryRepository(private val subscriberDAO: HistoryDao) {

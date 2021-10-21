@@ -1,8 +1,8 @@
-package com.ojanbelajar.obuce.data.source.local.viewmodel.viewmodel
+package com.ojanbelajar.obuce.ui.tab.statistic.tab.history.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.ojanbelajar.obuce.data.source.local.repo.repo.HistoryRepository
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.repo.HistoryRepository
 
 class HistoryViewModelFactory(private val repository: HistoryRepository):ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {

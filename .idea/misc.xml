@@ -24,15 +24,15 @@
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/OBUCEF/Obuce-master/app/src/main/res/layout/splash_screen.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/OBUCEF/Obuce-master/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1234375" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/drawable-v24/ic_baseline_add_circle_outline_24.xml" value="0.25" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.1" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_consult.xml" value="0.11197916666666667" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.2" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_consult.xml" value="0.264" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_consult_address.xml" value="0.11197916666666667" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_detail_food.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_detail_food.xml" value="0.264" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_dictionary_food.xml" value="0.115625" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_food_recommendation.xml" value="0.12604166666666666" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_get_started.xml" value="0.22554347826086957" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_how_to_scan.xml" value="0.115625" />
-        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_food.xml" value="0.115625" />
+        <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_food.xml" value="0.144" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_history.xml" value="0.1" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_list_workout.xml" value="0.12604166666666666" />
         <entry key="..\:/OTODIDAK/AndroidDicoding/Bangkit-DICODING/OBUCEF/Repo Obucef/Obuce/app/src/main/res/layout/activity_login.xml" value="0.1" />
@@ -87,7 +87,6 @@
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_consult.xml" value="0.5" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_home.xml" value="0.5" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_statistic.xml" value="0.19166666666666668" />
-        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_excercise.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_row_consult.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Obuce/app/src/main/res/drawable-v24/bg_round_white_2.xml" value="0.3609375" />
@@ -126,7 +125,6 @@
         <entry key="app/src/main/res/layout/activity_how_to_scan.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_list_food.xml" value="0.24728260869565216" />
         <entry key="app/src/main/res/layout/activity_scan_result.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/bottom_popup.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_food.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.75" />
       </map>

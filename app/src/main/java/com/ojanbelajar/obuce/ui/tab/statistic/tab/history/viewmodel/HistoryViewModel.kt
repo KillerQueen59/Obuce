@@ -1,10 +1,10 @@
-package com.ojanbelajar.obuce.data.source.local.viewmodel.viewmodel
+package com.ojanbelajar.obuce.ui.tab.statistic.tab.history.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
-import com.ojanbelajar.obuce.data.source.local.repo.repo.HistoryRepository
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.repo.HistoryRepository
 import kotlinx.coroutines.launch
 
 class HistoryViewModel(private val repository: HistoryRepository):ViewModel() {

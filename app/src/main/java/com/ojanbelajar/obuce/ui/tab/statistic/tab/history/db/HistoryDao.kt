@@ -1,4 +1,4 @@
-package com.ojanbelajar.obuce.data.source.local.db
+package com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

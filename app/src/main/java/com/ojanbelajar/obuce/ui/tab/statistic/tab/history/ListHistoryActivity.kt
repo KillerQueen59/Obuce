@@ -5,12 +5,12 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ojanbelajar.obuce.data.source.local.db.HistoryDao
-import com.ojanbelajar.obuce.data.source.local.db.HistoryDatabase
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db.HistoryDao
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db.HistoryDatabase
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
-import com.ojanbelajar.obuce.data.source.local.repo.repo.HistoryRepository
-import com.ojanbelajar.obuce.data.source.local.viewmodel.viewmodel.HistoryViewModel
-import com.ojanbelajar.obuce.data.source.local.viewmodel.viewmodel.HistoryViewModelFactory
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.repo.HistoryRepository
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.viewmodel.HistoryViewModel
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.viewmodel.HistoryViewModelFactory
 import com.ojanbelajar.obuce.databinding.ActivityListHistoryBinding
 
 class ListHistoryActivity : AppCompatActivity() {

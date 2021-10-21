@@ -1,5 +1,8 @@
 package com.ojanbelajar.obuce.data.source.local.entity
 
+import androidx.room.Entity
+
+@Entity(tableName = "food_recommend_data_table")
 data class FoodEntity(
     var title: String = "",
     var description: String = "",
