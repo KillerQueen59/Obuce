@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 class GetStartedPagerAdapter(manager: FragmentManager):  FragmentPagerAdapter(manager, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
 
-    override fun getCount(): Int = 3
+    override fun getCount(): Int = 4
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
@@ -16,6 +16,9 @@ class GetStartedPagerAdapter(manager: FragmentManager):  FragmentPagerAdapter(ma
             }
             1 -> {
                 GenderFragment()
+            }
+            2 -> {
+                AgeFragment()
             }
             else ->{
                 return MeasureFragment()

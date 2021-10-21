@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager
 import com.ojanbelajar.obuce.databinding.ActivityGetStartedBinding
 import com.ojanbelajar.obuce.ui.login.LoginActivity
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class GetStartedActivity: AppCompatActivity() {
 
@@ -39,7 +40,12 @@ class GetStartedActivity: AppCompatActivity() {
                         binding.btnRight.visibility = View.VISIBLE
                         binding.btnContinue.visibility = View.GONE
                     }
-                    2 ->{
+                    2 -> {
+                        binding.btnLeft.visibility = View.VISIBLE
+                        binding.btnRight.visibility = View.VISIBLE
+                        binding.btnContinue.visibility = View.GONE
+                    }
+                    3 ->{
                         binding.btnLeft.visibility = View.VISIBLE
                         binding.btnRight.visibility = View.GONE
                         binding.btnContinue.visibility = View.VISIBLE
@@ -54,7 +60,7 @@ class GetStartedActivity: AppCompatActivity() {
 
         binding.btnRight.setOnClickListener {
             position = binding.pagerGetstarted.currentItem;
-            if (position < 3) {
+            if (position < 4) {
                 position++
                 binding.pagerGetstarted.currentItem = position
             }
@@ -67,7 +73,7 @@ class GetStartedActivity: AppCompatActivity() {
             }
         }
         binding.btnContinue.setOnClickListener {
-            startActivity<LoginActivity>()
+            startActivity<CongratulationsActivity>()
         }
     }
 }

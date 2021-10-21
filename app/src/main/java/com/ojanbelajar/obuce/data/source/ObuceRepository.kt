@@ -1,0 +1,26 @@
+package com.ojanbelajar.obuce.data.source
+
+import com.ojanbelajar.obuce.data.source.remote.RemoteDataInterface
+import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
+import com.ojanbelajar.obuce.data.source.remote.network.ApiResponse
+import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
+import javax.inject.Inject
+
+class ObuceRepository @Inject constructor(
+    private val contentRemoteSource: RemoteDataInterface,
+
+    ): Repository {
+    override fun login(body: LoginBody): Flow<Resource<LoginResponse>> =
+        object : NetworkOnlyResource<LoginResponse,LoginResponse>(){
+            override fun loadFromNetwork(data: LoginResponse): Flow<LoginResponse> {
+                return flowOf(data)
+            }
+
+            override suspend fun createCall(): Flow<ApiResponse<LoginResponse>> {
+                return contentRemoteSource.login(body)
+            }
+
+        }.asFlow()
+}

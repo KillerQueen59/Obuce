@@ -9,6 +9,7 @@ import com.ojanbelajar.obuce.databinding.ActivityOnboardBinding
 import com.ojanbelajar.obuce.ui.login.LoginActivity
 import com.ojanbelajar.obuce.utils.SessionManagement
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class OnboardActivity: AppCompatActivity() {
 
@@ -22,7 +23,7 @@ class OnboardActivity: AppCompatActivity() {
         binding = ActivityOnboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         session = SessionManagement(this)
-        if(session.checkFirst()) toLogin()
+        if(session.isFirstOpen) toLogin()
         actionBar?.hide()
         defineData()
     }

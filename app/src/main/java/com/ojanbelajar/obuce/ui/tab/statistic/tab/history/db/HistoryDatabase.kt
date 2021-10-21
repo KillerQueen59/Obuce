@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 
-@Database(entities = [HistoryEntity::class],version = 1)
+@Database(entities = [HistoryEntity::class],version = 2)
 abstract class HistoryDatabase:RoomDatabase() {
 
     abstract val dao: HistoryDao

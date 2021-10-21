@@ -23,9 +23,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ps"
                 android:gravity="center"
+                android:layout_marginHorizontal="30dp"
                 android:text="Let’s get started!"
                 android:textColor="@color/black"
-                android:textSize="48sp"
+                android:textSize="44sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

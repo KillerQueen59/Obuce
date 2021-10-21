@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "history_data_table")
 data class HistoryEntity(
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey()
     @ColumnInfo(name = "id")
     var id: Int,
 
