@@ -6,10 +6,9 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.ojanbelajar.obuce.data.source.local.entity.FoodEntity
-import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
 
 @Dao
-interface FoodRecommendDao {
+interface FoodDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSubscriber(foodEntity: FoodEntity): Long

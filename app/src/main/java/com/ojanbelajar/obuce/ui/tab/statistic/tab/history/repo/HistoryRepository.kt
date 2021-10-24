@@ -1,7 +1,7 @@
 package com.ojanbelajar.obuce.ui.tab.statistic.tab.history.repo
 
-import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db.HistoryDao
 import com.ojanbelajar.obuce.data.source.local.entity.HistoryEntity
+import com.ojanbelajar.obuce.ui.tab.statistic.tab.history.db.HistoryDao
 
 class HistoryRepository(private val subscriberDAO: HistoryDao) {
 

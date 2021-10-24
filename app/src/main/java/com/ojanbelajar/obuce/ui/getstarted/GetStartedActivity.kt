@@ -5,9 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.ojanbelajar.obuce.databinding.ActivityGetStartedBinding
-import com.ojanbelajar.obuce.ui.login.LoginActivity
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.toast
 
 class GetStartedActivity: AppCompatActivity() {
 

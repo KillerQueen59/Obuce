@@ -1,19 +1,12 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
-import android.app.DatePickerDialog
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ojanbelajar.obuce.databinding.FragmentAgeBinding
-import java.time.LocalDate
-import java.time.ZoneId
 import java.util.*
-import android.R
-
-
 
 
 class AgeFragment: Fragment() {

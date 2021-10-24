@@ -2,11 +2,9 @@ package com.ojanbelajar.obuce.ui.tab.home.workout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.ojanbelajar.obuce.databinding.ActivityWorkoutBinding
 import org.jetbrains.anko.startActivity
-import android.view.MotionEvent
-import android.view.View
-import androidx.core.view.isVisible
 
 
 class WorkoutActivity : AppCompatActivity() {

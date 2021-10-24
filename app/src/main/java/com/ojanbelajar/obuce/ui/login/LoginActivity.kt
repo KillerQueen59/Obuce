@@ -14,7 +14,6 @@ import com.ojanbelajar.obuce.utils.SessionManagement
 import dagger.hilt.android.AndroidEntryPoint
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.toast
 import org.jetbrains.anko.yesButton
 
 @AndroidEntryPoint

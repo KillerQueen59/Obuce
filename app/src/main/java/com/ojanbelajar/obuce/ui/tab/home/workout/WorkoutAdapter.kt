@@ -11,7 +11,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.local.entity.ExerciseEntity
-import com.ojanbelajar.obuce.data.source.local.entity.WorkoutEntity
 
 class WorkoutAdapter(private val context: Context,private val listWorkoutEntity: ArrayList<ExerciseEntity>) : RecyclerView.Adapter<WorkoutAdapter.ListViewHolder>(){
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

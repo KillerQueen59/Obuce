@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ojanbelajar.obuce.R
-import com.ojanbelajar.obuce.data.source.local.entity.DictionaryEntity
 import com.ojanbelajar.obuce.databinding.ItemDictionaryBinding
 import kotlinx.android.synthetic.main.bottom_popup.view.*
 import org.jetbrains.anko.layoutInflater

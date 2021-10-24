@@ -4,11 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityCongratulationBinding
-import com.ojanbelajar.obuce.ui.MainActivity
 import com.ojanbelajar.obuce.ui.login.LoginActivity
 import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.startActivity
 
 class CongratulationsActivity: AppCompatActivity() {
 

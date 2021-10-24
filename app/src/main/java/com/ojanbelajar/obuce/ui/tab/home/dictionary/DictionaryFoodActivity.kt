@@ -4,9 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ojanbelajar.obuce.data.source.local.entity.DictionaryEntity
 import com.ojanbelajar.obuce.databinding.ActivityDictionaryFoodBinding
-import com.ojanbelajar.obuce.ui.tab.home.food.scan.ScanResultViewModel
 
 class DictionaryFoodActivity: AppCompatActivity() {
 
