@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ojanbelajar.obuce">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -22,10 +22,10 @@
             android:name=".ui.tab.statistic.tab.StatisticActivity"
             android:exported="true"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".ui.tab.consult.ConsultActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+<!--        <activity-->
+<!--            android:name=".ui.tab.consult.ConsultActivity"-->
+<!--            android:exported="true"-->
+<!--            android:screenOrientation="portrait"/>-->
         <activity
             android:name=".ui.tab.consult.ConsultAddressActivity"
             android:exported="true"
