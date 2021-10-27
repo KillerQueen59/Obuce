@@ -37,6 +37,8 @@
     <string name="day">Day</string>
     <string name="month">Month</string>
     <string name="year">Year</string>
+    <string name="result_named_objec">result named objec</string>
+    <string name="predict_food">predict_food</string>
 
     <!--    DATA ITEM ONBOARD-->
     <array name="sortFood">

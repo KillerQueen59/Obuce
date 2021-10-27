@@ -42,10 +42,13 @@ android {
 //    buildFeatures {
 //        viewBinding true
 //    }
-
     packagingOptions {
         exclude 'META-INF/AL2.0'
         exclude 'META-INF/LGPL2.1'
+    }
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
     }
 }
 
@@ -73,6 +76,7 @@ dependencies {  implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+    implementation 'org.tensorflow:tensorflow-lite:2.4.0'
 
     // Glide
     kapt 'com.github.bumptech.glide:compiler:4.12.0'
