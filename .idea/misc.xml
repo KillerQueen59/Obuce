@@ -95,6 +95,10 @@
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_measure.xml" value="0.333786231884058" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_statistic.xml" value="0.19166666666666668" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_detail.xml" value="0.18854166666666666" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_food.xml" value="0.18854166666666666" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.34193840579710144" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_nutritions.xml" value="0.34193840579710144" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_row_consult.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Obuce/app/src/main/res/drawable-v24/bg_round_white_2.xml" value="0.3609375" />

@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp">
 
         <TextView
             android:id="@+id/nutrition_name"
@@ -13,6 +14,7 @@
             android:layout_height="32dp"
             android:background="@drawable/ic_baseline_circle_32"
             android:text="@string/nutrition_name"
+            android:maxLines="1"
             android:textSize="12sp"
             android:gravity="center"
             app:layout_constraintCircleRadius="16dp"

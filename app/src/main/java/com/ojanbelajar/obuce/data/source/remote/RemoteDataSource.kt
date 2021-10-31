@@ -3,6 +3,7 @@ package com.ojanbelajar.obuce.data.source.remote
 import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.network.ApiResponse
 import com.ojanbelajar.obuce.data.source.remote.network.ApiService
+import com.ojanbelajar.obuce.data.source.remote.response.ListFoodResponse
 import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -16,6 +17,21 @@ class RemoteDataSource @Inject constructor(private val apiService: ApiService): 
         return flow {
             try {
                 val response = apiService.login(body)
+                if (!response.equals(null)) {
+                    emit(ApiResponse.Success(response))
+                } else {
+                    emit(ApiResponse.Empty)
+                }
+            } catch (e: Exception){
+                emit(ApiResponse.Error(e.toString()))
+            }
+        }.flowOn(Dispatchers.IO )
+    }
+
+    override suspend fun getFood(): Flow<ApiResponse<ListFoodResponse>> {
+        return flow {
+            try {
+                val response = apiService.getFood()
                 if (!response.equals(null)) {
                     emit(ApiResponse.Success(response))
                 } else {

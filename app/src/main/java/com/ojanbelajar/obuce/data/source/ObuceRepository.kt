@@ -3,6 +3,7 @@ package com.ojanbelajar.obuce.data.source
 import com.ojanbelajar.obuce.data.source.remote.RemoteDataInterface
 import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.network.ApiResponse
+import com.ojanbelajar.obuce.data.source.remote.response.ListFoodResponse
 import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
@@ -20,6 +21,18 @@ class ObuceRepository @Inject constructor(
 
             override suspend fun createCall(): Flow<ApiResponse<LoginResponse>> {
                 return contentRemoteSource.login(body)
+            }
+
+        }.asFlow()
+
+    override fun getFood(): Flow<Resource<ListFoodResponse>> =
+        object : NetworkOnlyResource<ListFoodResponse,ListFoodResponse>(){
+            override fun loadFromNetwork(data: ListFoodResponse): Flow<ListFoodResponse> {
+                return flowOf(data)
+            }
+
+            override suspend fun createCall(): Flow<ApiResponse<ListFoodResponse>> {
+                return contentRemoteSource.getFood()
             }
 
         }.asFlow()

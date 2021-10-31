@@ -12,23 +12,30 @@ import com.ojanbelajar.obuce.databinding.ItemFoodBinding
 import org.jetbrains.anko.startActivity
 
 
-class ListFoodAdapter (private val context: Context, private val listFood: ArrayList<FoodEntity>) :
+class ListFoodAdapter (private val context: Context) :
     RecyclerView.Adapter<ListFoodAdapterViewHolder>(){
+    private var listData = ArrayList<FoodEntity>()
 
+    fun setData(newListData: List<FoodEntity>?) {
+        if (newListData == null) return
+        listData.clear()
+        listData.addAll(newListData)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListFoodAdapterViewHolder =
         ListFoodAdapterViewHolder(ItemFoodBinding.inflate(LayoutInflater.from(parent.context),parent,false))
 
     override fun onBindViewHolder(holder: ListFoodAdapterViewHolder, position: Int) {
-        val food = listFood[position]
+        val food = listData[position]
         holder.bind(food,context)
         holder.itemView.setOnClickListener {
-            context.startActivity<DetailFoodActivity>()
+            context.startActivity<DetailFoodActivity>("food" to food)
         }
     }
 
     override fun getItemCount(): Int {
-        return listFood.size
+        return listData.size
     }
 
 }

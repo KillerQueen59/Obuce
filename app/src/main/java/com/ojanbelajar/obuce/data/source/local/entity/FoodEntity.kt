@@ -1,14 +1,17 @@
 package com.ojanbelajar.obuce.data.source.local.entity
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.android.parcel.Parcelize
 
 @Entity(tableName = "food_recommend_data_table")
+@Parcelize
 data class FoodEntity(
     @PrimaryKey
     @ColumnInfo(name = "id")
-    var id: Int = 0,
+    var id: String = "",
 
     @ColumnInfo(name = "title")
     var title: String = "",
@@ -29,11 +32,11 @@ data class FoodEntity(
     var images: List<String> = emptyList(),
 
     @ColumnInfo(name = "nutrition")
-    var nutrition: List<NutritionEntity> = emptyList(),
+    var nutrition: List<NutritionEntity> = arrayListOf(),
 
     @ColumnInfo(name = "ingredient")
-    var ingredient: List<String> = emptyList(),
+    var ingredient: List<String> = arrayListOf(),
 
     @ColumnInfo(name = "step")
-    var step: List<String> = emptyList()
-)
+    var step: List<String> = arrayListOf()
+): Parcelable
