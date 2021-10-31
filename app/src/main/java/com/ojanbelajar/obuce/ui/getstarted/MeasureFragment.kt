@@ -12,7 +12,7 @@ import com.ojanbelajar.obuce.databinding.FragmentMeasureBinding
 class MeasureFragment: Fragment() {
 
 
-    lateinit var binding: FragmentMeasureBinding
+    private lateinit var binding: FragmentMeasureBinding
     private val viewModel: SignUpViewModel by activityViewModels()
 
     override fun onCreateView(
