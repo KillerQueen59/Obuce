@@ -1,7 +1,6 @@
 package com.ojanbelajar.obuce.ui.tab.home.food
 
 import android.os.Bundle
-import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -11,13 +10,9 @@ import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.data.source.Resource
 import com.ojanbelajar.obuce.data.source.local.entity.FoodEntity
 import com.ojanbelajar.obuce.data.source.local.entity.NutritionEntity
-import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
 import com.ojanbelajar.obuce.databinding.ActivityListFoodBinding
-import com.ojanbelajar.obuce.ui.login.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import org.jetbrains.anko.alert
 import org.jetbrains.anko.toast
-import org.jetbrains.anko.yesButton
 
 @AndroidEntryPoint
 class ListFoodActivity: AppCompatActivity() {

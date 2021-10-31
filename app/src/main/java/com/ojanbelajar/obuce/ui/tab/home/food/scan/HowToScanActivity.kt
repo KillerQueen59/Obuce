@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.databinding.ActivityHowToScanBinding
 import com.ojanbelajar.obuce.ml.MobilenetV110224Quant
 import kotlinx.android.synthetic.main.activity_how_to_scan.*
-import org.jetbrains.anko.startActivity
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer

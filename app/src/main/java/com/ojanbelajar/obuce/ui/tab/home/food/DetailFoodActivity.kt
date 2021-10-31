@@ -2,7 +2,6 @@ package com.ojanbelajar.obuce.ui.tab.home.food
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.data.source.local.entity.FoodEntity
 import com.ojanbelajar.obuce.databinding.ActivityDetailFoodBinding

@@ -1,12 +1,10 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ojanbelajar.obuce.R
-import com.ojanbelajar.obuce.databinding.FragmentMeasureBinding
+import androidx.fragment.app.Fragment
 import com.ojanbelajar.obuce.databinding.FragmentSignupSummaryBinding
 
 class SignupSummaryFragment : Fragment() {

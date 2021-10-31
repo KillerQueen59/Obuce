@@ -1,17 +1,11 @@
 package com.ojanbelajar.obuce.ui.tab.home.food
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.ojanbelajar.obuce.R
-import com.ojanbelajar.obuce.data.source.local.entity.FoodEntity
 import com.ojanbelajar.obuce.data.source.local.entity.NutritionEntity
-import com.ojanbelajar.obuce.databinding.ItemFoodBinding
 import com.ojanbelajar.obuce.databinding.ItemNutritionDailyValueBinding
-import org.jetbrains.anko.startActivity
 
 class DetailAdapter  :
     RecyclerView.Adapter<DetailAdapterViewHolder>(){
