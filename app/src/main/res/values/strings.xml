@@ -39,6 +39,10 @@
     <string name="year">Year</string>
     <string name="result_named_objec">result named objec</string>
     <string name="predict_food">predict_food</string>
+    <string name="email">Email</string>
+    <string name="your_email">your email</string>
+    <string name="gender">Gender</string>
+    <string name="your_gender">your gender</string>
 
     <!--    DATA ITEM ONBOARD-->
     <array name="sortFood">
@@ -46,7 +50,7 @@
         <item>Best Deal</item>
     </array>
 
-<!--    DATA ITEM HOME MAIN TAB-->
+    <!--    DATA ITEM HOME MAIN TAB-->
     <string-array name="datatitle">
         <item>Arm Raises</item>
         <item>Arm Raises</item>
@@ -84,7 +88,7 @@
         <item>@drawable/screenshottwolistusecase3_3</item>
     </integer-array>
 
-<!--    DATA ITEM CONSULT MAIN TAB-->
+    <!--    DATA ITEM CONSULT MAIN TAB-->
     <string-array name="datanameconsult">
         <item>Dr.Reisa Broto Asmoro</item>
         <item>Dr.Reisa Broto Asmoro</item>
@@ -109,7 +113,7 @@
         <item>program dr. OZ Indonesia</item>
     </string-array>
 
-<!--    DATA ITEM LIST ITEM HISTORY CONSUMPTION-->
+    <!--    DATA ITEM LIST ITEM HISTORY CONSUMPTION-->
     <string-array name="dataListHistoryname">
         <item>Salad Bowl</item>
         <item>Salad Bowl</item>

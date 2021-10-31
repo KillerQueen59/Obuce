@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
 import com.ojanbelajar.obuce.R
 import com.ojanbelajar.obuce.databinding.FragmentGenderBinding
@@ -13,6 +14,8 @@ class GenderFragment: Fragment() {
 
 
     lateinit var binding: FragmentGenderBinding
+    private val viewModel: SignUpViewModel by activityViewModels()
+
     var isMale = true
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,6 +35,15 @@ class GenderFragment: Fragment() {
         binding.lnFemale.setOnClickListener {
             if (isMale) isMale = !isMale
             setSrc(isMale)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        if (isMale) {
+            viewModel.signUpData.gender = 1
+        } else {
+            viewModel.signUpData.gender = 0
         }
     }
 

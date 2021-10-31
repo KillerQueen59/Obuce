@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.ojanbelajar.obuce.databinding.FragmentAgeBinding
 import java.util.*
 
@@ -12,6 +13,7 @@ import java.util.*
 class AgeFragment: Fragment() {
 
     lateinit var binding: FragmentAgeBinding
+    private val viewModel: SignUpViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,10 +26,25 @@ class AgeFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getCurrentDate()
+        //getCurrentDate()
     }
 
-    private fun getCurrentDate(){
+    override fun onPause() {
+        super.onPause()
+
+        /*//val datePicker = binding.edtBirthDate
+        val dateSet = Calendar.getInstance()
+        binding.edtBirthDate.init(dateSet.get(Calendar.YEAR), dateSet.get(Calendar.MONTH), dateSet.get(Calendar.DAY_OF_MONTH)){
+            view, year, month, day ->
+            viewModel.signUpData.birthdate = Date(year, month, day)
+        }*/
+        var day = binding.edtBirthDate.dayOfMonth
+        var month = binding.edtBirthDate.month
+        var year = binding.edtBirthDate.year-1900
+        viewModel.signUpData.birthdate = Date(year, month, day)
+    }
+
+    /*private fun getCurrentDate(){
         val cal = Calendar.getInstance()
         val year = cal[Calendar.YEAR]
         val month = cal[Calendar.MONTH]
@@ -35,7 +52,7 @@ class AgeFragment: Fragment() {
         binding.date.text = day.toString()
         binding.month.text = pickMonth(month)
         binding.year.text = year.toString()
-    }
+    }*/
 
 /*    private fun pickDate(){
         val datePickerDialog = DatePickerDialog(
@@ -46,7 +63,7 @@ class AgeFragment: Fragment() {
 
     }*/
 
-    private fun pickMonth(month: Int): String{
+    /*private fun pickMonth(month: Int): String{
         when(month){
             1-> return "Jan"
             2-> return "Feb"
@@ -62,5 +79,5 @@ class AgeFragment: Fragment() {
             12-> return "Dec"
         }
         return ""
-    }
+    }*/
 }

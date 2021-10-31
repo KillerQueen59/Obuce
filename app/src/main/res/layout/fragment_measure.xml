@@ -36,18 +36,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ps"
-                android:text="Wieght (Kg)"
+                android:text="Weight (Kg)"
                 android:layout_marginTop="10dp"
                 android:textSize="21sp"
                 android:textColor="@color/black"/>
+
             <EditText
+                android:id="@+id/edt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_round_white_stroke_main"
-                android:layout_width="match_parent"
-                android:paddingHorizontal="10dp"
                 android:fontFamily="@font/ps"
-                android:layout_height="50dp"
-                android:inputType="number"/>
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="10dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,14 +58,16 @@
                 android:layout_marginTop="10dp"
                 android:textSize="21sp"
                 android:textColor="@color/black"/>
+
             <EditText
+                android:id="@+id/edt_height"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_round_white_stroke_main"
-                android:layout_width="match_parent"
-                android:paddingHorizontal="10dp"
                 android:fontFamily="@font/ps"
-                android:inputType="number"
-                android:layout_height="50dp"/>
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="10dp" />
 
         </LinearLayout>
 

@@ -20,7 +20,7 @@ class GetStartedPagerAdapter(manager: FragmentManager):  FragmentPagerAdapter(ma
             2 -> {
                 AgeFragment()
             }
-            else ->{
+            else -> {
                 return MeasureFragment()
             }
         }
