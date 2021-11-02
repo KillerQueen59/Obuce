@@ -38,7 +38,7 @@ class ListHistoryActivity : AppCompatActivity() {
         rvSetUpHistoryConsumption()
 
     }
-    private fun subscribeListShow(){
+    private fun     subscribeListShow(){
         viewModell.subs.observe(this,{
             Log.i("mytag",it.toString())
             binding.rvListallhistoryconsumption.adapter = HistoryStatisticAdapter(it)

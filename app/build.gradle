@@ -173,4 +173,12 @@ dependencies {  implementation fileTree(dir: 'libs', include: ['*.jar'])
     //Carousel
     implementation 'com.synnapps:carouselview:0.1.4'
 
+
+    ////////imagePredict gradle
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    //MultiType-FilePicker
+    implementation 'com.vincent.filepicker:MultiTypeFilePicker:1.0.7'
+
+
 }

@@ -16,6 +16,12 @@ class HistoryViewModel(private val repository: HistoryRepository):ViewModel() {
     val inputcomposition = MutableLiveData<String>()
     val inputimage = MutableLiveData<String>()
 
+    init {
+        insert(HistoryEntity(0,"rice", "00.10","Monday","125kcal","co2,co,etc",0))
+        insert(HistoryEntity(1,"fat", "00.59","Monday","125kcal","co2,co,etc",0))
+
+    }
+
     private fun insert(historyEntity: HistoryEntity){
         viewModelScope.launch {
             repository.insert(historyEntity)

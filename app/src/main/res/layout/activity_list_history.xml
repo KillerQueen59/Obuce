@@ -22,102 +22,93 @@
             android:fontFamily="@font/ps_bold"
             android:textSize="40sp"
             android:textColor="@color/black"/>
+<!--        -->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan name mu...."-->
+<!--                android:text="@={historyViewModel.inputName}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
-        <!--    @ColumnInfo(name = "name")-->
-        <!--    var name: String,-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan name mu...."
-                android:text="@={historyViewModel.inputName}"/>
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan time mu...."-->
+<!--                android:text="@={historyViewModel.inputtime}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <!--    @ColumnInfo(name = "time")-->
-        <!--    var time: String,-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan time mu...."
-                android:text="@={historyViewModel.inputtime}"/>
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan day mu...."-->
+<!--                android:text="@={historyViewModel.inputday}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <!--    @ColumnInfo(name = "day")-->
-        <!--    var day: String,-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan day mu...."
-                android:text="@={historyViewModel.inputday}"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <!--    @ColumnInfo(name = "calori")-->
-        <!--    var calori: String,-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan calori mu...."
-                android:text="@={historyViewModel.inputcalori}"/>
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan calori mu...."-->
+<!--                android:text="@={historyViewModel.inputcalori}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <!--    @ColumnInfo(name = "composition")-->
-        <!--    var composition: String,-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan composition mu...."
-                android:text="@={historyViewModel.inputcomposition}"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <!--    @ColumnInfo(name = "image")-->
-        <!--    var image: Int-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Ketikkan image mu...."
-                android:text="@={historyViewModel.inputimage}"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="SUBMIT"
-            android:padding="8dp"
-            android:onClick="@{()->historyViewModel.saveOrUpdate()}"/>
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan composition mu...."-->
+<!--                android:text="@={historyViewModel.inputcomposition}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        -->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:hint="Ketikkan image mu...."-->
+<!--                android:text="@={historyViewModel.inputimage}"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="SUBMIT"-->
+<!--            android:padding="8dp"-->
+<!--            android:onClick="@{()->historyViewModel.saveOrUpdate()}"/>-->
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/rv_listallhistoryconsumption"
+            android:layout_marginTop="12dp"
             tools:listitem="@layout/item_history_statistic"/>
 
     </LinearLayout>
