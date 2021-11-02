@@ -43,6 +43,12 @@
     <string name="your_email">your email</string>
     <string name="gender">Gender</string>
     <string name="your_gender">your gender</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="your_birthdate">your birthdate</string>
+    <string name="height">Height</string>
+    <string name="your_height">your height</string>
+    <string name="weight">Weight</string>
+    <string name="your_weight">your weight</string>
 
     <!--    DATA ITEM ONBOARD-->
     <array name="sortFood">

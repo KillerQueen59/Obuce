@@ -1,6 +1,7 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,10 +28,50 @@ class AgeFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //getCurrentDate()
+
+        val datePicker = binding.edtBirthDate
+        val dateSet = Calendar.getInstance()
+        datePicker.init(dateSet.get(Calendar.YEAR), dateSet.get(Calendar.MONTH), dateSet.get(Calendar.DAY_OF_MONTH)) { view, year, month, day ->
+            val lastData = viewModel.getFixData()
+            if (lastData != null) {
+                val updateData = lastData
+                updateData.birthdate = Date(year, month, day)
+                viewModel.editData(updateData)
+            }
+        }
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+
+        val day = binding.edtBirthDate.dayOfMonth
+        val month = binding.edtBirthDate.month
+        val year = binding.edtBirthDate.year-1900
+        val birthdate = Date(year, month, day)
+
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            updateData.birthdate = birthdate
+            viewModel.editData(updateData)
+        }
+        Log.d("AgeFragment", "Detach")
     }
 
     override fun onPause() {
         super.onPause()
+        val day = binding.edtBirthDate.dayOfMonth
+        val month = binding.edtBirthDate.month
+        val year = binding.edtBirthDate.year-1900
+        val birthdate = Date(year, month, day)
+
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            updateData.birthdate = birthdate
+            viewModel.editData(updateData)
+        }
+        Log.d("AgeFragment", "Pause")
 
         /*//val datePicker = binding.edtBirthDate
         val dateSet = Calendar.getInstance()
@@ -38,10 +79,16 @@ class AgeFragment: Fragment() {
             view, year, month, day ->
             viewModel.signUpData.birthdate = Date(year, month, day)
         }*/
-        var day = binding.edtBirthDate.dayOfMonth
+        /*var day = binding.edtBirthDate.dayOfMonth
         var month = binding.edtBirthDate.month
         var year = binding.edtBirthDate.year-1900
         viewModel.signUpData.birthdate = Date(year, month, day)
+        Log.d("AgeFragment", "onPause")*/
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("AgeFragment", "onResume")
     }
 
     /*private fun getCurrentDate(){

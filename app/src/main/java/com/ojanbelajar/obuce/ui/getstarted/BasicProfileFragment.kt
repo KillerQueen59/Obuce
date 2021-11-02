@@ -1,11 +1,14 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
 import com.ojanbelajar.obuce.databinding.FragmentBasicProfileBinding
 
 class BasicProfileFragment: Fragment() {
@@ -33,17 +36,35 @@ class BasicProfileFragment: Fragment() {
             binding.edtEmail.setText(user.email)
             binding.edtPassword.setText(user.password)
         }
+        viewModel.getData().observe(viewLifecycleOwner, userObserver)*/
 
-        // Observe LiveData
-        viewModel.getUser().observe(viewLifecycleOwner, userObserver)
-        */
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            updateData.name = binding.edtName.text.toString()
+            updateData.email = binding.edtEmail.text.toString()
+            updateData.password = binding.edtPassword.text.toString()
+
+            viewModel.editData(updateData)
+        }
+        Log.d("BasicProfile", "Detach")
     }
 
     override fun onPause() {
         super.onPause()
-        viewModel.signUpData.name = binding.edtName.text.toString()
-        viewModel.signUpData.email = binding.edtEmail.text.toString()
-        viewModel.signUpData.password = binding.edtPassword.text.toString()
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            updateData.name = binding.edtName.text.toString()
+            updateData.email = binding.edtEmail.text.toString()
+            updateData.password = binding.edtPassword.text.toString()
+
+            viewModel.editData(updateData)
+        }
     }
 
     fun isChecked(): Boolean{

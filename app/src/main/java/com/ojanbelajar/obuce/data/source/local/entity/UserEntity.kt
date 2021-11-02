@@ -10,7 +10,8 @@ data class UserEntity (
     var gender: Int = 0,
     var weight: Double = 0.0,
     var height: Double = 0.0,
-    var birthdate: Date = Date(2000, 12, 30)
+    var birthdate: Date = Date(2000, 12, 30),
+    var bmi: Double = 0.0
     )
 
 

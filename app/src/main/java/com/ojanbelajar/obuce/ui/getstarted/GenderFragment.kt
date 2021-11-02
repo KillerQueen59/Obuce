@@ -1,6 +1,7 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,13 +39,41 @@ class GenderFragment: Fragment() {
         }
     }
 
+    override fun onDetach() {
+        super.onDetach()
+
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            if (isMale) {
+                updateData.gender = 1
+            } else {
+                updateData.gender = 0
+            }
+            viewModel.editData(updateData)
+        }
+        Log.d("GenderFragment", "Detach")
+    }
+
     override fun onPause() {
         super.onPause()
-        if (isMale) {
+
+        val lastData = viewModel.getFixData()
+        if (lastData != null) {
+            val updateData = lastData
+            if (isMale) {
+                updateData.gender = 1
+            } else {
+                updateData.gender = 0
+            }
+            viewModel.editData(updateData)
+        }
+        Log.d("GenderFragment", "Pause")
+        /*if (isMale) {
             viewModel.signUpData.gender = 1
         } else {
             viewModel.signUpData.gender = 0
-        }
+        }*/
     }
 
     private fun setSrc(isMale: Boolean){
