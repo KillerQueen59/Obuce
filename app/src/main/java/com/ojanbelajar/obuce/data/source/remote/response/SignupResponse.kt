@@ -3,6 +3,11 @@ package com.ojanbelajar.obuce.data.source.remote.response
 import java.util.*
 
 data class SignupResponse(
+    val user: User
+
+)
+
+data class User(
     val name: String,
     val email: String,
     val password: String,
