@@ -18,7 +18,7 @@ interface ApiService {
     @POST("auth/register")
     suspend fun signup(@Body body: SignupBody): SignupResponse
 
-    @GET("food")
+    @GET("food?populateNutritions=true&populateIngredients=true")
     suspend fun getFood(): ListFoodResponse
 
     @Multipart

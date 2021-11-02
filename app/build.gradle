@@ -38,10 +38,10 @@ android {
         mlModelBinding true
     }
 
-//
-//    buildFeatures {
-//        viewBinding true
-//    }
+
+    buildFeatures {
+        viewBinding true
+    }
     packagingOptions {
         exclude 'META-INF/AL2.0'
         exclude 'META-INF/LGPL2.1'
@@ -49,6 +49,7 @@ android {
     androidResources {
         noCompress 'lite'
     }
+
 }
 
 dependencies {  implementation fileTree(dir: 'libs', include: ['*.jar'])

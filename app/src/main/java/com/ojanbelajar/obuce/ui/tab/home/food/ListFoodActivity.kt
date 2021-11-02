@@ -52,13 +52,13 @@ class ListFoodActivity: AppCompatActivity() {
                        for(f in result.data!!.foods){
                            val nutritions: ArrayList<NutritionEntity> = arrayListOf()
                            for(n in f.nutritions){
-                                val nut = NutritionEntity(n.nutrition, n.quantity.toDouble())
+                                val nut = NutritionEntity(n.nutrition.name, n.quantity.toDouble())
                                 nutritions.add(nut)
                            }
                            val ingredients: ArrayList<String> = arrayListOf()
                            for(i in f.ingredients){
                                val ing = i.ingredient
-                               ingredients.add(ing)
+                               ingredients.add(ing.name)
                            }
                             val food = FoodEntity(f._id,f.name,"",f.calories,"","",
                                 emptyList(), nutritions, ingredients, arrayListOf()

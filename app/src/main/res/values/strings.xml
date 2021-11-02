@@ -29,7 +29,7 @@
     <string name="program_dr_oz_indonesia">program dr. OZ Indonesia</string>
     <string name="hello_blank_fragment_data_statistic">hello_blank_fragment_data statistic</string>
     <string name="statistics">STATISTICS</string>
-    <string name="worksout">Worksout</string>
+    <string name="worksout">Workout</string>
     <string name="_6">6</string>
     <string name="name">Name</string>
     <string name="description">Description</string>
@@ -181,15 +181,15 @@
         <item>70 cal x 2Pcs</item>
     </string-array>
     <integer-array name="dataListHistorycompositionimage">
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
-        <item>@drawable/ilustrasio001</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
+        <item>@drawable/food_stat</item>
     </integer-array>
 </resources>

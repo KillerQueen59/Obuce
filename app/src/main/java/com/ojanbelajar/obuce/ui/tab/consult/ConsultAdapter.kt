@@ -27,7 +27,7 @@ class ConsultAdapter(private val consultEntityArraylisData:ArrayList<ConsultEnti
             .apply(RequestOptions().override(60,60)).
             into(holder.binding.imgItemPhoto)
         holder.binding.btnconsultasiselected.setOnClickListener{
-            val movedetailuseractivityworkout = Intent(contextrvitem, ChatConsultActivity::class.java)
+            val movedetailuseractivityworkout = Intent(contextrvitem, ConsultAddressActivity::class.java)
             contextrvitem.startActivity(movedetailuseractivityworkout)
         }
 

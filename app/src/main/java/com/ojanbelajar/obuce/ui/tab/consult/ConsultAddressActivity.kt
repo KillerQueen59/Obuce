@@ -3,6 +3,7 @@ package com.ojanbelajar.obuce.ui.tab.consult
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ojanbelajar.obuce.databinding.ActivityConsultAddressBinding
+import org.jetbrains.anko.startActivity
 
 class ConsultAddressActivity : AppCompatActivity() {
 
@@ -12,5 +13,8 @@ class ConsultAddressActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityConsultAddressBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.consult.setOnClickListener {
+            startActivity<ChatConsultActivity>()
+        }
     }
 }

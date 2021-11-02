@@ -11,11 +11,13 @@ class DetailFoodActivity: AppCompatActivity() {
     lateinit var binding: ActivityDetailFoodBinding
     lateinit var data: FoodEntity
     lateinit var adapter: DetailAdapter
+    lateinit var adapterIngredient: IngredientAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
         adapter = DetailAdapter()
+        adapterIngredient = IngredientAdapter()
         setupRV()
         data = intent.getParcelableExtra("food")?: FoodEntity()
         init(data)
@@ -30,11 +32,14 @@ class DetailFoodActivity: AppCompatActivity() {
         binding.price.text = food.price
         binding.calories.text = food.calories
         adapter.setData(food.nutrition)
+        adapterIngredient.setData(food.ingredient)
     }
 
     fun setupRV(){
         binding.rvNutrition.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false)
         binding.rvNutrition.adapter = adapter
+        binding.rvIngredient.layoutManager = LinearLayoutManager(this)
+        binding.rvIngredient.adapter = adapterIngredient
     }
 
 }

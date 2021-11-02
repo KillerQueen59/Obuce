@@ -11,10 +11,5 @@ class ChatConsultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityChatConsultBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.ivsendchatconsult.setOnClickListener {
-            startActivity<ConsultAddressActivity>()
-        }
-
     }
 }

@@ -71,15 +71,16 @@
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/drawable/bg_round_main_light.xml" value="0.3651041666666667" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/drawable/bg_round_white.xml" value="0.2078125" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.3651041666666667" />
-        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.19166666666666668" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_chat_consult.xml" value="0.33" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_congratulation.xml" value="0.3115942028985507" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_consult_address.xml" value="0.19166666666666668" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_detail_food.xml" value="0.19166666666666668" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_dictionary_food.xml" value="0.3489583333333333" />
-        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_food_recommendation.xml" value="0.3489583333333333" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_food_recommendation.xml" value="0.5" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_get_started.xml" value="0.333786231884058" />
-        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_how_to_scan.xml" value="0.19166666666666668" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_how_to_scan.xml" value="0.5" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_list_food.xml" value="0.19166666666666668" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_list_history.xml" value="0.3066123188405797" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_list_workout.xml" value="0.22056159420289856" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -91,10 +92,18 @@
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_age.xml" value="0.333786231884058" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_basic_profile.xml" value="0.333786231884058" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_consult.xml" value="0.5" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_data_statistic.xml" value="0.33" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_gender.xml" value="0.52099533437014" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_history_statictic.xml" value="0.31431159420289856" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_measure.xml" value="0.333786231884058" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/fragment_statistic.xml" value="0.19166666666666668" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_detail.xml" value="0.18854166666666666" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_food.xml" value="0.18854166666666666" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_history_statistic.xml" value="0.5" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_ingredient.xml" value="0.31431159420289856" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.34193840579710144" />
+        <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_nutritions.xml" value="0.34193840579710144" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/layout/item_row_consult.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Mobile Dev/Obuce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Obuce/app/src/main/res/drawable-v24/bg_round_white_2.xml" value="0.3609375" />
@@ -128,21 +137,11 @@
         <entry key="..\:/Workspace/Obuce/app/src/main/res/layout/spinner_item.xml" value="0.3489583333333333" />
         <entry key="..\:/Workspace/Obuce/app/src/main/res/layout/splash_screen.xml" value="0.2740036231884058" />
         <entry key="app/src/main/res/drawable/ic_baseline_circle_32.xml" value="0.27395833333333336" />
-        <entry key="app/src/main/res/layout/activity_cekcek.xml" value="0.11854103343465046" />
-        <entry key="app/src/main/res/layout/activity_congratulation.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_consult.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_detail_food.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_food_recommendation.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_how_to_scan.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_list_food.xml" value="0.24728260869565216" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_scan_result.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_age.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_history_statictic.xml" value="0.12537993920972645" />
-        <entry key="app/src/main/res/layout/fragment_measure.xml" value="0.12537993920972645" />
-        <entry key="app/src/main/res/layout/fragment_signup_summary.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_summary.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_food.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/item_nutrition_daily_value.xml" value="0.75" />
       </map>
