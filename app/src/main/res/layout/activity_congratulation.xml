@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
-            android:id="@+id/bmi"
+            android:id="@+id/tv_bmi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -67,10 +67,10 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bmi" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_bmi" />
 
         <TextView
-            android:id="@+id/classification"
+            android:id="@+id/tv_classification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/ps_bold"
@@ -95,7 +95,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/classification"
+            app:layout_constraintTop_toBottomOf="@+id/tv_classification"
             app:layout_constraintVertical_bias="0.0" />
 
 

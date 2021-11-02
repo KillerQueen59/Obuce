@@ -1,5 +1,6 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,6 +12,7 @@ import com.ojanbelajar.obuce.data.source.Resource
 import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
 import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.body.SignupBody
+import com.ojanbelajar.obuce.data.source.remote.response.SignupResponse
 import com.ojanbelajar.obuce.databinding.ActivityGetStartedBinding
 import com.ojanbelajar.obuce.ui.login.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -147,7 +149,9 @@ class GetStartedActivity: AppCompatActivity() {
                             is Resource.Success -> {
                                 binding.progressBar.visibility = View.GONE
                                 alert("Sign Up Success")
-                                startActivity<CongratulationsActivity>()
+
+                                result.data?.let { moveToCongratulationsActivity(it) }
+                                // startActivity<CongratulationsActivity>()
                             }
                             is Resource.Error -> {
                                 binding.progressBar.visibility = View.GONE
@@ -179,5 +183,11 @@ class GetStartedActivity: AppCompatActivity() {
         val date = date.date
         val birthdate = "$date/$month/$year"
         return birthdate
+    }
+
+    private fun moveToCongratulationsActivity(userData: SignupResponse) {
+        val congratulationsIntent = Intent(this@GetStartedActivity, CongratulationsActivity::class.java)
+        congratulationsIntent.putExtra(CongratulationsActivity.EXTRA_BMI, userData.user.bmi)
+        startActivity(congratulationsIntent)
     }
 }

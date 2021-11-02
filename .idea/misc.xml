@@ -129,7 +129,7 @@
         <entry key="..\:/Workspace/Obuce/app/src/main/res/layout/splash_screen.xml" value="0.2740036231884058" />
         <entry key="app/src/main/res/drawable/ic_baseline_circle_32.xml" value="0.27395833333333336" />
         <entry key="app/src/main/res/layout/activity_cekcek.xml" value="0.11854103343465046" />
-        <entry key="app/src/main/res/layout/activity_congratulation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_congratulation.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_consult.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_detail_food.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_food_recommendation.xml" value="0.22" />
