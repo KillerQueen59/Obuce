@@ -1,8 +1,6 @@
 package com.ojanbelajar.obuce.ui.getstarted
 
-import android.icu.text.SimpleDateFormat
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
-import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
 import com.ojanbelajar.obuce.databinding.FragmentBasicProfileBinding
 
 class BasicProfileFragment: Fragment() {

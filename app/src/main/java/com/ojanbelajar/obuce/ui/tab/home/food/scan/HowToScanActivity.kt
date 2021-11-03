@@ -8,10 +8,8 @@ import android.provider.MediaStore
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.ojanbelajar.obuce.databinding.ActivityHowToScanBinding
 import com.ojanbelajar.obuce.ml.MobilenetV110224Quant
-import kotlinx.android.synthetic.main.activity_how_to_scan.*
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -44,7 +42,7 @@ class HowToScanActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HowToScanViewModel::class.java)
 
-        showRecyclerList()
+//        showRecyclerList()
 
         binding.scanFood.setOnClickListener{
             dispatchTakePictureIntent()
@@ -114,16 +112,16 @@ class HowToScanActivity : AppCompatActivity() {
         return index
     }
 
-    private fun showRecyclerList() {
-        rv_howToScan.layoutManager = LinearLayoutManager(this)
-        val listSimpleItemAdapter = ListSimpleItemAdapter(viewModel.steps)
-        rv_howToScan.adapter = listSimpleItemAdapter
-
-        listSimpleItemAdapter.setOnItemClickCallback(object: ListSimpleItemAdapter.OnItemClickCallback{
-            override fun onItemClicked(data: String) {
-            }
-        })
-    }
+//    private fun showRecyclerList() {
+//        rv_howToScan.layoutManager = LinearLayoutManager(this)
+//        val listSimpleItemAdapter = ListSimpleItemAdapter(viewModel.steps)
+//        rv_howToScan.adapter = listSimpleItemAdapter
+//
+//        listSimpleItemAdapter.setOnItemClickCallback(object: ListSimpleItemAdapter.OnItemClickCallback{
+//            override fun onItemClicked(data: String) {
+//            }
+//        })
+//    }
 
 
 }

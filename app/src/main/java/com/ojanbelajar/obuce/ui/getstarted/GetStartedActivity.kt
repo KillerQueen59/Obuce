@@ -2,23 +2,16 @@ package com.ojanbelajar.obuce.ui.getstarted
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
 import com.ojanbelajar.obuce.data.source.Resource
-import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
-import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.body.SignupBody
 import com.ojanbelajar.obuce.data.source.remote.response.SignupResponse
 import com.ojanbelajar.obuce.databinding.ActivityGetStartedBinding
-import com.ojanbelajar.obuce.ui.login.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import org.jetbrains.anko.alert
-import org.jetbrains.anko.db.NULL
-import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.yesButton
 import java.util.*
 

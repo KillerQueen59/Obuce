@@ -6,7 +6,6 @@ import com.ojanbelajar.obuce.data.source.remote.response.ListFoodResponse
 import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
 import com.ojanbelajar.obuce.data.source.remote.response.SignupResponse
 import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import retrofit2.http.*
 
 interface ApiService {

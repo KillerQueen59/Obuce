@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.ojanbelajar.obuce.data.source.Repository
 import com.ojanbelajar.obuce.data.source.local.entity.UserEntity
-import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.body.SignupBody
 
 class SignUpViewModel @ViewModelInject constructor(
