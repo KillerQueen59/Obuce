@@ -71,6 +71,7 @@ class LoginActivity: AppCompatActivity() {
                         is Resource.Success -> {
                             val user = UserEntity(id=0, name="test",binding.edtEmail.toString(), "",0,0.0,0.0);
                             session.createLoginSession(user)
+                            session.updateTokenSession(result.data?.token.toString())
                             toMain()
                             binding.progress.visibility = View.GONE
                         }

@@ -1,19 +1,24 @@
 package com.ojanbelajar.obuce.di
 
+import android.content.Context
 import com.ojanbelajar.obuce.data.source.ObuceRepository
 import com.ojanbelajar.obuce.data.source.Repository
 import com.ojanbelajar.obuce.data.source.remote.RemoteDataInterface
 import com.ojanbelajar.obuce.data.source.remote.RemoteDataSource
 import com.ojanbelajar.obuce.data.source.remote.network.ApiService
+import com.ojanbelajar.obuce.utils.SessionManagement
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.qualifiers.ApplicationContext
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+import okhttp3.Request
+
 
 
 @Module
@@ -25,13 +30,20 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideHttpClient(): OkHttpClient = OkHttpClient.Builder().apply {
-        connectTimeout(30, TimeUnit.SECONDS)
-        readTimeout(30, TimeUnit.SECONDS)
-        writeTimeout(30, TimeUnit.SECONDS)
-    }.build()
+    fun provideSharedPreference(@ApplicationContext context: Context): SessionManagement {
+        return SessionManagement(context)
+    }
 
     @Singleton
+    @Provides
+    fun provideHttpClient(sessionManagement: SessionManagement): OkHttpClient = OkHttpClient.Builder().addInterceptor(Interceptor { chain ->
+        val token = sessionManagement.token
+        val newRequest: Request = chain.request().newBuilder()
+            .addHeader("Authorization", "Bearer $token")
+            .build()
+        chain.proceed(newRequest)
+    }).build()
+
     @Provides
     fun provideRetrofitInstance(okHttpClient: OkHttpClient, BASEURL: String): Retrofit = Retrofit.Builder().apply {
         baseUrl(BASEURL)
@@ -41,7 +53,6 @@ object AppModule {
 
 
     @Provides
-    @Singleton
     fun provideApiService(retrofit: Retrofit) = retrofit.create(ApiService::class.java)
 
     @Provides

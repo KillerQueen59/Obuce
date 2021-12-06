@@ -64,6 +64,11 @@ class SessionManagement(var context: Context) {
         editor.commit()
     }
 
+    fun updateTokenSession(token: String){
+        editor.putString(KEY_TOKEN,token)
+        editor.commit()
+    }
+
     fun checkLogin(): Boolean = this.isLoggedIn
     fun checkFirst(): Boolean = this.isFirstOpen
 

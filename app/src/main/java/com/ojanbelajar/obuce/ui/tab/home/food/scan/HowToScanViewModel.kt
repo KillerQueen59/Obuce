@@ -1,8 +1,14 @@
 package com.ojanbelajar.obuce.ui.tab.home.food.scan
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import com.ojanbelajar.obuce.data.source.Repository
+import okhttp3.MultipartBody
 
-class HowToScanViewModel: ViewModel() {
+class HowToScanViewModel@ViewModelInject constructor(
+    private val contentRepository: Repository
+): ViewModel() {
     private val howTo = arrayOf(
         "Dummy1",
         "Dummy2",
@@ -19,5 +25,6 @@ class HowToScanViewModel: ViewModel() {
             }
             return list
         }
+    fun uploadFood(body: MultipartBody.Part, token: String) = contentRepository.uploadFood(body,token).asLiveData()
 
 }

@@ -1,10 +1,12 @@
 package com.ojanbelajar.obuce.data.source.remote.network
 
+import androidx.annotation.NonNull
 import com.ojanbelajar.obuce.data.source.remote.body.LoginBody
 import com.ojanbelajar.obuce.data.source.remote.body.SignupBody
 import com.ojanbelajar.obuce.data.source.remote.response.ListFoodResponse
 import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
 import com.ojanbelajar.obuce.data.source.remote.response.SignupResponse
+import com.ojanbelajar.obuce.data.source.remote.response.UploadFoodResponse
 import okhttp3.MultipartBody
 import retrofit2.http.*
 
@@ -23,6 +25,6 @@ interface ApiService {
     @Multipart
     @POST("food/upload")
     suspend fun uploadFood(
-        @Part image:MultipartBody.Part
-    )
+        @Part image: MultipartBody.Part,
+    ): UploadFoodResponse
 }

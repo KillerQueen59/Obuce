@@ -7,13 +7,14 @@ import com.ojanbelajar.obuce.data.source.remote.network.ApiResponse
 import com.ojanbelajar.obuce.data.source.remote.response.ListFoodResponse
 import com.ojanbelajar.obuce.data.source.remote.response.LoginResponse
 import com.ojanbelajar.obuce.data.source.remote.response.SignupResponse
+import com.ojanbelajar.obuce.data.source.remote.response.UploadFoodResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
+import okhttp3.MultipartBody
 import javax.inject.Inject
 
 class ObuceRepository @Inject constructor(
     private val contentRemoteSource: RemoteDataInterface,
-
     ): Repository {
     override fun login(body: LoginBody): Flow<Resource<LoginResponse>> =
         object : NetworkOnlyResource<LoginResponse,LoginResponse>(){
@@ -50,4 +51,17 @@ class ObuceRepository @Inject constructor(
             }
 
         }.asFlow()
+
+    override fun uploadFood(body: MultipartBody.Part,token: String): Flow<Resource<UploadFoodResponse>> =
+        object : NetworkOnlyResource<UploadFoodResponse,UploadFoodResponse>(){
+            override fun loadFromNetwork(data: UploadFoodResponse): Flow<UploadFoodResponse> {
+                return flowOf(data)
+            }
+
+            override suspend fun createCall(): Flow<ApiResponse<UploadFoodResponse>> {
+                return contentRemoteSource.uploadFood(body, token)
+            }
+
+        }.asFlow()
+
 }
