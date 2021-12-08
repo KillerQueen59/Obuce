@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_dailyneeds_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nutrition_name"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dailyneeds_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_0000_unit"
+        android:textSize="24sp"
+        android:textColor="@color/main_dark"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tv_dailyneeds_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_dailyneeds_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dailyneeds_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

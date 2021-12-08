@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.getstarted.ComingSoonActivity"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_coming_soon_scene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coming_soon_pic" />
+
+        <TextView
+            android:id="@+id/tv_coming_soon_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coming_soon"
+            android:textColor="@color/main_dark"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_coming_soon_letter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coming_soon_letter"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
