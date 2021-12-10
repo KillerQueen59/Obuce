@@ -56,6 +56,7 @@
         </RelativeLayout>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_dailyneeds"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -127,8 +128,6 @@
                         android:text="2400 Kcal"/>
                 </LinearLayout>
             </LinearLayout>
-
-
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView

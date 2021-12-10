@@ -19,7 +19,7 @@
         android:theme="@style/Theme.Obuce"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.tab.home.DailyNeedsActivity"
+            android:name=".ui.tab.home.dailyneed.DailyNeedsActivity"
             android:exported="true" />
         <activity
             android:name=".ui.getstarted.ComingSoonActivity"
