@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.tab.home.DailyNeedsActivity"
-    android:padding="12dp">
+    tools:context=".ui.tab.home.dailyneed.DailyNeedsActivity"
+    android:padding="18dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                     android:id="@+id/rv_dailyneeds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_daily_needs"/>
+                    tools:listitem="@layout/item_daily_needs" />
 
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>

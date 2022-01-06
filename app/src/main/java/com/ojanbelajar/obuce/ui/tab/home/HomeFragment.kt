@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ojanbelajar.obuce.databinding.FragmentHomeBinding
+import com.ojanbelajar.obuce.ui.tab.home.dailyneed.DailyNeedsActivity
 import com.ojanbelajar.obuce.ui.tab.home.dictionary.DictionaryFoodActivity
 import com.ojanbelajar.obuce.ui.tab.home.food.FoodRecommendationActivity
 import com.ojanbelajar.obuce.ui.tab.home.workout.WorkoutMethodeActivity
@@ -44,6 +45,11 @@ class HomeFragment : Fragment() {
 
 //        val index = arguments?.getInt(ARG_SECTION_NUMBER, 0)
 //        binding.tvhome.text = "home"
+
+        binding.cvDailyneeds.setOnClickListener {
+            startActivity<DailyNeedsActivity>()
+        }
+
         binding.cvChoosefood.setOnClickListener {
             startActivity<FoodRecommendationActivity>()
         }
