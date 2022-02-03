@@ -26,7 +26,7 @@ import okhttp3.Request
 object AppModule {
 
     @Provides
-    fun provideBase() = "http://34.126.169.20/v1/"
+    fun provideBase() = "https://obuce-backend.herokuapp.com/v1/"
 
     @Singleton
     @Provides
