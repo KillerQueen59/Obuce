@@ -66,7 +66,7 @@ class RemoteDataSource @Inject constructor(private val apiService: ApiService): 
     override suspend fun uploadFood(body: MultipartBody.Part,token: String): Flow<ApiResponse<UploadFoodResponse>> {
         return flow {
             try {
-                val response = apiService.uploadFood(body)
+                val response = apiService.uploadFood("http://34.124.236.36:3000/v1/food/upload",body )
                 if (!response.equals(null)) {
                     emit(ApiResponse.Success(response))
                 } else {

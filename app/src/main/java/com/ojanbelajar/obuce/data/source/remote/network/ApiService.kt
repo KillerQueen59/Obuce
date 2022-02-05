@@ -23,8 +23,9 @@ interface ApiService {
     suspend fun getFood(): ListFoodResponse
 
     @Multipart
-    @POST("food/upload")
+    @POST
     suspend fun uploadFood(
+        @Url url: String,
         @Part image: MultipartBody.Part,
     ): UploadFoodResponse
 }
